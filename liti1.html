@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body{
+		margin: 0;
+		padding: 0;
+	}
+		.show{
+			perspective:800px;
+			position: absolute;
+			width: 700px;
+			height: 700px;
+			top: 50%;
+			left: 50%;
+			margin-left: -350px;
+			margin-top: -350px;
+		}
+		.box{
+			transform-style:preserve-3d;
+			position: absolute;
+			width: 450px;
+			height: 450px;
+			top: 50%;
+			left: 50%;
+			margin-left: -225px;
+			margin-top: -225px;
+			transition:2s linear;
+			animation:liti 2s  linear infinite;
+		}
+		@keyframes liti{
+			0%{
+				transform:rotateY(-40deg) rotateZ(-10deg) rotateX(20deg);
+			}
+			100%{
+				transform:rotateY(320deg) rotateZ(350deg) rotateX(380deg);
+			}
+		}
+		.face{
+			position: absolute;
+			width: 150px;
+			height: 150px;
+			top: 50%;
+			left: 50%;
+			margin-left: -75px;
+			margin-top: -75px;
+			transition:2s linear;
+			background:currentcolor;
+		}
+		.face1{
+			color:green;
+			transform:translateZ(75px);
+		}
+		.face2{
+			color:yellow;
+			transform:rotateY(0.5turn) translateZ(75px);
+		}
+		.face3{
+			color:blue;
+			transform:rotateY(90deg) translateZ(75px);
+		}
+		.face4{
+			color:pink;
+			transform: rotateY(-90deg) translateZ(75px);
+		}
+		.face5{
+			color:black;
+			transform:rotateX(90deg) translateZ(75px);
+		}
+		.face6{
+			color:#656845;
+			transform:rotateX(-90deg) translateZ(75px);
+		}
+		.show:hover .face{
+			box-shadow:0 0 30px currentcolor;
+		}
+		.faces{
+			position: absolute;
+			width: 450px;
+			height: 450px;
+			top: 50%;
+			left: 50%;
+			margin-left: -225px;
+			margin-top: -225px;
+			background:rgba(0, 0, 0, 0.3);
+			transition:2s linear;
+		}
+		.face7{
+			transform:translateZ(225px);
+		}
+		.face8{
+			transform:rotateY(0.5turn) translateZ(225px);
+		}
+		.face9{
+			transform:rotateY(90deg) translateZ(225px);
+		}
+		.face10{
+			transform: rotateY(-90deg) translateZ(225px);
+		}
+		.face11{
+			transform:rotateX(90deg) translateZ(225px);
+		}
+		.face12{
+			transform:rotateX(-90deg) translateZ(225px);
+		}
+		.face7 p{
+			font-size: 100px;
+			text-align: center;
+			color: #fff;
+			display: none;
+		}
+		.face8 p{
+			font-size: 100px;
+			text-align: center;
+			color: #fff;
+			display: none;
+		}
+		.face9 p{
+			font-size: 100px;
+			text-align: center;
+			color: #fff;
+			display: none;
+		}
+		.face10 p{
+			font-size: 100px;
+			text-align: center;
+			color: #fff;
+			display: none;
+		}
+		.face11 p{
+			font-size: 100px;
+			text-align: center;
+			color: #fff;
+			display: none;
+		}
+		.face12 p{
+			font-size: 100px;
+			text-align: center;
+			color: #fff;
+			display: none;
+		}
+		.show:hover .face7{
+			transform:translateZ(325px);
+			border-radius: 50%;
+		}
+		.show:hover .face8{
+			transform:rotateY(0.5turn) translateZ(325px);
+			border-radius: 50%;
+		}
+		.show:hover .face9{
+			transform:rotateY(90deg) translateZ(325px);
+			border-radius: 50%;
+		}
+		.show:hover .face10{
+			transform: rotateY(-90deg) translateZ(325px);
+			border-radius: 50%;
+		}
+		.show:hover .face11{
+			transform:rotateX(90deg) translateZ(325px);
+			border-radius: 50%;
+
+		}
+		.show:hover .face12{
+			transform:rotateX(-90deg) translateZ(325px);
+			border-radius: 50%;
+		}
+		.show:hover .face7 p{
+			display: block;
+		}
+		.show:hover .face8 p{
+			display: block;
+		}
+		.show:hover .face9 p{
+			display: block;
+		}
+		.show:hover .face10 p{
+			display: block;
+		}
+		.show:hover .face11 p{
+			display: block;
+		}
+		.show:hover .face12 p{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="show">
+		<div class="box">
+			<div class="face face1"></div>
+			<div class="face face2"></div>
+			<div class="face face3"></div>
+			<div class="face face4"></div>
+			<div class="face face5"></div>
+			<div class="face face6"></div>
+			<div class="faces face7"><p>启梦</p></div>
+			<div class="faces face8"><p>启梦</p></div>
+			<div class="faces face9"><p>启梦</p></div>
+			<div class="faces face10"><p>启梦</p></div>
+			<div class="faces face11"><p>启梦</p></div>
+			<div class="faces face12"><p>启梦</p></div>
+		</div>
+	</div>
+</body>
+</html>
