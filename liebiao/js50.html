@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" name="" id="ipt">
+	<button type="submit" id="tj">添加</button>
+	<ol class="lb">
+	</ol>
+	<button id="qk">清空列表</button>
+	<script src="js/jquery-3.4.1.js"></script>
+	<script>
+		$("#tj").click(function(event) {
+		        val = $("#ipt").val();
+		        if ($("#ipt").val().length==0) {
+		        	alert('还没有填写内容');
+		        }else{
+		        $('#ipt').val('');
+		        $(".lb").append("<li>"+'&times;'+val+"</li>");}
+		    });
+		$('#qk').click(function (argument) {
+			$('.lb').empty('');
+		})
+	</script>
+</body>
+</html>
