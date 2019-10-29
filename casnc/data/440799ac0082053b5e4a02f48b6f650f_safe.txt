@@ -1,0 +1,12 @@
+127.0.0.1||/wap/wap.php||
+	select distinct id,title,litpic,description,click,pubdate,typeid from dede_archives where typeid in (select id from dede_arctype where topid = 1 or id=1)order by id desc limit 10||sub select detect
+127.0.0.1||/wap/wap.php||
+	select distinct id,title,litpic,description,click,pubdate,typeid from dede_archives where typeid in (select id from dede_arctype where topid = 1 or id=1)order by id desc limit 10||sub select detect
+127.0.0.1||/wap/wap.php||
+	select distinct id,title,litpic,description,click,pubdate,typeid from dede_archives where typeid in (select id from dede_arctype where topid = 1 or id=1)order by id desc limit 10||sub select detect
+127.0.0.1||/wap/wap.php||
+	select distinct id,title,litpic,description,click,pubdate,typeid from dede_archives where typeid in (select id from dede_arctype where topid = 1 or id=1)order by id desc limit 10||sub select detect
+127.0.0.1||/wap/wap.php||
+	select distinct id,title,litpic,description,click,pubdate,typeid from dede_archives where typeid in (select id from dede_arctype where topid = 1 or id=1)order by id desc limit 10||sub select detect
+127.0.0.1||/wap/wap.php?action=caselist&id=13||
+	select distinct id,title,litpic,description,click,pubdate,typeid from dede_archives where typeid in (select id from dede_arctype where topid = 1 or id=1)order by id desc limit 10||sub select detect

@@ -1,0 +1,5 @@
+INSERT INTO `dede_search_keywords` VALUES('1','隆耀集团','隆耀集团 集团 隆耀','1','1','1424667925','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','设计','设计','1','7','1424689548','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','是','是','1','3','1424847964','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','搜搜','搜搜','1','0','1426573713','0','0');
+INSERT INTO `dede_search_keywords` VALUES('5','网页','网页','1','6','1426573726','0','0');

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="/dede58/js/html5shiv.js"></script>
+<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" id="color-variation" href="/dede58/css/beb.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/dede58/css/case.css" />
+<style type="text/css">
+body, td, th {
+	font-family: Verdana, Geneva, sans-serif;
+}
+</style>
+<script src="/dede58/js/jquery.min.js"></script><!--JQUERY-->
+<script src="/dede58/js/includer.js"></script>
+</head>
+
+<body data-smooth-scrolling="1">
+
+<!--[if lte IE 7]><script src="/dede58/js/lte-ie7.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/dede58/css/style.css" />
+
+{dede:include filename="head.htm"/}
+<div class="clear"></div>
+
+<section class="page-top">
+    <div class="container">
+    <div class="three-fourth">
+     <h1>{dede:field.typename/}</h1>
+      <ul class="breadcrumb">
+         {dede:field name='position'/}   </ul>
+    </div>
+    <div class="one-fourth last">
+
+					
+					<div id="search-text" class="search-text">
+                    <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+                    <input type="hidden" name="kwtype" value="0" />
+						<input type="text" class="sousuo"  placeholder="搜索" name="q" />
+						<input type="submit" name="submit" class="tijiao" />
+					</form>
+						</div>
+					
+
+					</div>
+    </div>
+</section>
+
+
+
+<!------内页基本内容区域-------->
+<section id="content">
+  <section class="container"> 
+    
+    <!---->
+    
+    <section class="one">
+
+      <div id="list">
+        <div class="common">
+                
+	
+     {dede:list pagesize='12'}
+     
+         <div class="ue_grid_1 listbox newlist">
+            <div class="sc_preview"><a target="_blank" href="[field:arcurl/]"><img src="[field:litpic/]" alt="[field:fulltitle/]" /></a>
+            </div>
+            <div class="sc_info">
+              
+              <div class="pdw20">
+                <h3><a target="_blank" href="[field:arcurl/]">[field:title/]</a></h3>
+			  </div>
+              
+              <div class="listline"></div>
+              <div class="pdw20">
+				<div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+                <div class="artfields fl listfields">
+                  <ul>
+					  <li class="likeit"><a href="javascript:viod(0)">[field:click/]</a></li>
+                  </ul>
+                </div>
+
+                <div class="medal fr">
+                    <div class="colorplates colorsmall mb20">
+              
+                  </div>
+				</div>
+                <div class="clear"></div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+	{/dede:list}   
+	
+                 <div class="clear"></div>
+        </div>
+      </div>
+      
+      <div id="pages">
+        <div class="common" style="width: 1180px; left: 0px;">
+          <ul>
+           {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}   <div class="clear"></div>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+      
+    </section>
+    <!----> 
+    
+  </section>
+</section>
+<!------内页基本内容区域-------->
+
+<div class="clear"></div>
+
+
+<div id="backtop"></div>
+<!---case--->
+
+{dede:include filename="footer.htm"/}
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* dede58.com 做最好的织梦模板 */
+@charset "utf-8";
+h1, h2, h3, h4, h5, h6 {
+	font-family:'微软雅黑';
+	font-weight:bold;
+}
+.warpyly {
+	width:1180px;
+	margin:0 auto;
+	background:#fff;
+	font-family:'微软雅黑';
+	padding-bottom:50px;
+}
+.ydtitle {
+	color:#fff;
+	background:#ec1a23;
+	height:100px;
+	text-align:center;
+	border-bottom:5px solid #f2ebeb;
+}
+.ydtitle2 {
+	margin-top:50px;
+}
+.ydtitle h1 {
+	font-size:35px;
+	padding-top:15px;
+	color:#fff;
+}
+.ydtitle h2 {
+	font-size:20px;
+	color:#fff;
+	font-weight:normal;
+}
+.ydyuyue {
+	height:50px;
+ background:;
+	line-height:50px;
+	margin-top:70px;
+	text-align:center;
+	color:#fff;
+	display:block;
+	font-weight:bold;
+	font-size:20px;
+	padding-right:20px;
+	background:url(../images/yidongjiantou.png) no-repeat 630px center #ccc;
+	transition: all 0.2s linear 0s;
+}
+.ydyuyue:hover {
+	background:url(../images/yidongjiantou.png) no-repeat 630px center #ff0000;
+}
+/**/
+
+.webyinyu {
+	padding:50px 30px 0 30px;
+}
+.webyinyu h1 {
+	font-size:28px;
+	color:#333;
+}
+.weblc {
+	width:240px;
+	margin-right:53px;
+	margin-top:40px;
+}
+.weblc01 {
+	margin:0;
+	margin-top:40px;
+}
+.weblcpic {
+	width:240px;
+	height:160px;
+	background:url(../images/web01.jpg) no-repeat;
+}
+.weblcpic01 {
+	background-position:0 0;
+}
+.weblcpic02 {
+	background-position:0 -160px;
+}
+.weblcpic03 {
+	background-position:0 -320px;
+}
+.weblcpic04 {
+	background-position:0 -480px;
+}
+.weblc p {
+	font-size:12px;
+	font-family:'宋体';
+	color:#666;
+	line-height:23px;
+	padding-top:10px;
+}
+.webtitle {
+	height:50px;
+	width:100%;
+	background:url(../images/webtitlebg.jpg) no-repeat;
+	margin-top:80px;
+}
+.webtitle01 {
+	background-position:0 0;
+}
+.webtitle02 {
+	background-position:0 -50px;
+}
+.webtitle03 {
+	background-position:0 -100px;
+}
+.webtitle04 {
+	background-position:0 -150px;
+}
+.webtitle05 {
+	background-position:0 -200px;
+}
+.webtitle06 {
+	background-position:0 -250px;
+}
+.webcehua, .websheji, .webhudong, .webkaifa, .webliucheng, .webkehu {
+	padding:0 30px;
+}
+.webcehua h2, .websheji h2, .webhudong h2, .webkaifa h2, .webliucheng h2, .webkehu h2 {
+	font-size:18px;
+	color:#333;
+	line-height:30px;
+	margin-top:40px;
+	font-family:'微软雅黑';
+}
+.cehualist {
+	margin-top:20px;
+}
+.cehuaitem {
+	height:100px;
+	padding-top:20px;
+}
+.cehuaitemyuan {
+	background:url(../images/webyuanbg.jpg) no-repeat;
+	width:100px;
+	height:70px;
+	text-align:center;
+	line-height:20px;
+	color:#fff;
+	font-size:15px;
+	padding-top:30px;
+}
+.cehuaitemtext {
+	width:950px;
+	height:42px;
+	border-radius:1px;
+	background:#f2f2f2;
+	color:#666;
+	font-size:15px;
+	line-height:23px;
+	margin-top:20px;
+	padding:18px 20px 0 20px;
+}
+.cehuaitemtext01 {
+	padding-top:7px;
+	height:53px;
+}
+/*网站策划 end*/
+.webshejinr, .webhudongnr, .webkaifanr, .webliuchengnr, .webkehunr {
+	margin-top:40px;
+}
+.webhudongitem {
+	margin-right:23px;
+	width:140px;
+	height:80px;
+	text-align:center;
+	line-height:80px;
+	background:#e9e9e9;
+	border-radius:1px;
+	color:#666;
+	font-size:15px;
+}
+.webhudongitem01 {
+	margin-right:0;
+}
+/*网站设计 end*/

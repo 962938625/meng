@@ -1,0 +1,11 @@
+<?php
+global $em_bodytypes;
+$em_bodytypes = array();
+$em_bodytypes['1'] = 'ÔÈ³Æ';
+$em_bodytypes['2'] = 'ÃçÌõ';
+$em_bodytypes['3'] = '½¡×³';
+$em_bodytypes['4'] = 'ÂÔÅÖ';
+$em_bodytypes['5'] = '·áÂú';
+$em_bodytypes['6'] = 'ÊÝÐ¡';
+$em_bodytypes['7'] = '¸ßÊÝ';
+?>

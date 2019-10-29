@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="/dede58/js/html5shiv.js"></script>
+<![endif]-->
+
+<head>
+<script>
+var bs={
+        versions:function(){
+           var u = navigator.userAgent, app = navigator.appVersion;
+           return {//移动终端浏览器版本信息
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1 //是否iPad                
+            };
+         }(),
+         language:(navigator.browserLanguage || navigator.language).toLowerCase()
+    } 
+    if(bs.versions.mobile){
+        if(bs.versions.android||bs.versions.iPhone||bs.versions.iPad||bs.versions.ios){
+            window.location.href="/wap/wap.php";
+        }
+    }
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width" />
+<title>中科新世纪能源科技有限公司</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="design by www.dede58.com" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" id="color-variation" href="/dede58/css/beb.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/dede58/css/case.css" />
+<link rel="stylesheet" type="text/css" href="/dede58/css/layerslider.css" />
+<style type="text/css">
+body, td, th {
+	font-family: Verdana, Geneva, sans-serif;
+}
+</style>
+<script src="/dede58/js/jquery.min.js"></script><!--JQUERY-->
+<script src="/dede58/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="/dede58/js/includer.js"></script>
+</head>
+
+<body data-smooth-scrolling="1">
+<!--[if lt IE 0]>
+
+	<DIV class="alert alert-block ie-alert" id="iehack">
+	  <div style="float:right;"><BUTTON class=close data-dismiss="alert" onClick='javascript:closeiehack();'>×</BUTTON></div>
+	  <H4>浏览器版本过低</H4>
+	  <P>你知道不？你还在用十年前的浏览器！这个网页上的有很多好看的东西和动画效果都显示不了！</P>
+	  <P>建议赶快升级你的浏览器版本或使用Chrome或Safari等高级浏览器。</P>
+	</DIV>
+<script language="javascript">
+function closeiehack(){
+	theObj = document.getElementById('iehack').style;
+	theObj.display = "none";
+}
+</script>
+<![endif]--> 
+
+<!--[if lte IE 7]><script src="/dede58/js/lte-ie7.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/dede58/css/style.css" />
+<section id="header-bg" >
+  <section id="header-wrapper">
+    <div id="pre-header-panel">
+      <div class="container">
+        <div class="one-half" style="width:30%;">
+          <ul id="top-links">
+            <li><i class="icon-map-marker"><img src="/dede58/images/icon_add.jpg"></i><a href="/contact/"></a></li>
+            <li><i class="icon-phone"><img src="/dede58/images/icon_tel.jpg"></i><strong><a href="javascript:void(0);" style="color:#EC1A23;">400-8888-8888</a></strong></li>
+          </ul>
+        </div>
+        <div class="one-half last" style="width:65%;">
+          <ul class="header-social-icons">
+            <li><a href="/a/zhongkejingshen/" class="googleplus"><i class="icon-mobile"></i><span>中科精神</span></a></li>
+            <li><a href="/a/fuwu/qiyelinian/" class="dribbble"><i class="icon-cart"></i><span>企业理念</span></a></li>
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <header>
+    <section id="header-container">
+      <section class="container">
+        <div class="logo-wrapper"><a href="/" id="logo"></a></div>
+        <div id="navigation-wrapper">
+          <nav id="main-navigation">
+            <ul class="main-menu">
+              <li><a href="/"  class="active-page"><span aria-hidden="true" class="li_display nav_icon"></span>首页</a></li>
+              <li><a href="/a/zoujinzhongke/" class="" ><span aria-hidden="true" class="li_solutions nav_icon"></span>走进中科</a>
+                <ul>
+                  
+                  <li><a href="/a/zoujinzhongke/" target="_self">公司简介</a></li>
+                  
+                  <li><a href="/a/fangan/big/" target="_self">发展历程</a></li>
+                  
+                  <li><a href="/a/fangan/gongsirongyu/" target="_self">公司荣誉</a></li>
+                  
+                  <li><a href="/a/fangan/shehuigongyi/" target="_self">社会公益</a></li>
+                  
+                </ul>
+              </li><li><a href="/a/fuwu/list_1.html" class="" ><span aria-hidden="true" class="li_bulb nav_icon"></span>企业文化</a>
+                <ul>
+                  
+                  <li><a href="/a/zhongkejingshen/" target="_self">中科精神</a></li>
+                  
+                  <li><a href="/a/fuwu/qiyelinian/" target="_self">企业理念</a></li>
+                  
+                </ul>
+              </li><li><a href="/a/jituanchanye/" class="" ><span aria-hidden="true" class="li_news nav_icon"></span>集团产业</a>
+                <ul>
+                  
+                  <li><a href="/a/jituanchanye/dianxin/" target="_self">电芯</a></li>
+                  
+                  <li><a href="/a/jituanchanye/mozu/" target="_self">模组</a></li>
+                  
+                  <li><a href="/a/jituanchanye/xitong/" target="_self">系统</a></li>
+                  
+                </ul>
+              </li><li><a href="/a/xinwenzhongxin/list_1.html" class="" ><span aria-hidden="true" class="li_pen nav_icon"></span>新闻中心</a>
+                <ul>
+                  
+                </ul>
+              </li><li><a href="/a/kehufuwu/" class="" ><span aria-hidden="true" class="li_settings nav_icon"></span>客户服务</a>
+                <ul>
+                  
+                  <li><a href="/a/zaixianzixun/" target="_self">在线咨询</a></li>
+                  
+                  <li><a href="/a/kehufuwu/tousujianyi/" target="_self">投诉建议</a></li>
+                  
+                  <li><a href="/a/kehufuwu/a/kehufuwu/lianxiwomen/" target="_self">联系我们</a></li>
+                  
+                </ul>
+              </li><li><a href="/a/contact/index.html" class="" ><span aria-hidden="true" class="li_phone nav_icon"></span>联系我们</a>
+                <ul>
+                  
+                  <li><a href="/a/contact/a/contact/rencailinian/" target="_self">人才理念</a></li>
+                  
+                  <li><a href="/a/contact/a/contact/zhiweizhaopin/" target="_self">职位招聘</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </section>
+  </header>
+</section >
+<div class="clear"></div>
+<!--背景大图 b-->
+<div id="slide-index">
+  <div class=slides>
+    <div class="slide autoMaxWidth">
+      <div id=bi_0 class=image><a href="javascript:viod(0);"><img src="/dede58/images/banner-1.jpg"></a></div>
+      <div id=bt_0 class=text></div>
+      <div id=bb_0 class=button></div>
+    </div>
+    <div class="slide autoMaxWidth">
+      <div id=bi_0 class=image><a href="javascript:viod(0);"><img src="/dede58/images/banner-2.jpg" /></a></div>
+      <div id=bt_0 class=text></div>
+      <div id=bb_0 class=button></div>
+    </div>
+    <div class="slide autoMaxWidth">
+      <div id=bi_0 class=image><a href="javascript:viod(0);" ><img src="/dede58/images/banner-4.jpg"></a></div>
+      <div id=bt_0 class=text></div>
+      <div id=bb_0 class=button></div>
+    </div>
+  </div>
+  <div class=control><a href="javascript:viod(0);"></a><a href="javascript:viod(0);"></a><a href="javascript:viod(0);"></a></div>
+</div>
+<script type=text/javascript>
+$(function(){	
+	indexSlides.ini();
+});
+var indexSlides={};
+indexSlides.timer=false;
+indexSlides.total=$('#slide-index .control a').length;
+indexSlides.current=-1;
+indexSlides.offScreenLeft=2000;
+indexSlides.leaveScreenLeft=4000;
+indexSlides.animating=false;
+indexSlides.obj=$('#slide-index .slide');
+indexSlides.style=[];
+indexSlides.style[0]={
+	text:{left:'30px',top:'81px'},
+	button:{left:'30px',top:'244px'},
+	direction:'tb'
+};
+	
+indexSlides.style[1]={
+	text:{left:'30px',top:'81px'},
+	button:{left:'30px',top:'244px'},
+	direction:'tb'
+};
+	
+indexSlides.style[2]={
+	text:{left:'30px',top:'81px'},
+	button:{left:'30px',top:'244px'},
+	direction:'tb'
+};
+	
+</script> 
+<script type=text/javascript src="/dede58/js/banner.js"></script> 
+
+<!--背景大图 e--> 
+
+<!--MAIN WRAPPER ENDS -->
+
+<div class="clear"></div>
+<div class="casetitle">
+  <h1>案例<strong>Cases</strong></h1>
+  <p>我们的作品，他们的故事<br>
+    Our work, their stories </p>
+  <a class="more" href="/jituanchanye/">+更多案例</a> </div>
+
+<!---case--->
+<div id="list">
+  <div class="common"> <div class="ue_grid_1 listbox newlist">
+      <div class="sc_preview"><a target="_blank" href="/a/jituanchanye/xitong/99.html"><img src="/uploads/allimg/190522/1-1Z522120G20-L.jpg" alt="电池包系统" /></a> </div>
+      <div class="sc_info">
+        <div class="pdw20">
+          <h3><a target="_blank" href="/a/jituanchanye/xitong/99.html">电池包系统</a></h3>
+        </div>
+        <div class="listline"></div>
+        <div class="pdw20">
+          <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <div class="artfields fl listfields">
+            <ul>
+              <li class="likeit"><a href="javascript:viod(0)">129</a></li>
+            </ul>
+          </div>
+          <div class="medal fr">
+            <div class="colorplates colorsmall mb20">
+              <ul>
+                <li class="black"><a href="javascript:viod(0)"></a></li>
+                <li class="blue"><a href="javascript:viod(0)"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+<div class="ue_grid_1 listbox newlist">
+      <div class="sc_preview"><a target="_blank" href="/a/jituanchanye/mozu/98.html"><img src="/uploads/190522/1-1Z522120341Y3.jpg" alt="模组" /></a> </div>
+      <div class="sc_info">
+        <div class="pdw20">
+          <h3><a target="_blank" href="/a/jituanchanye/mozu/98.html">模组</a></h3>
+        </div>
+        <div class="listline"></div>
+        <div class="pdw20">
+          <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <div class="artfields fl listfields">
+            <ul>
+              <li class="likeit"><a href="javascript:viod(0)">52</a></li>
+            </ul>
+          </div>
+          <div class="medal fr">
+            <div class="colorplates colorsmall mb20">
+              <ul>
+                <li class="black"><a href="javascript:viod(0)"></a></li>
+                <li class="blue"><a href="javascript:viod(0)"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+<div class="ue_grid_1 listbox newlist">
+      <div class="sc_preview"><a target="_blank" href="/a/jituanchanye/dianxin/46.html"><img src="/uploads/190522/1-1Z522115PCS.jpg" alt="三元8554" /></a> </div>
+      <div class="sc_info">
+        <div class="pdw20">
+          <h3><a target="_blank" href="/a/jituanchanye/dianxin/46.html">三元8554</a></h3>
+        </div>
+        <div class="listline"></div>
+        <div class="pdw20">
+          <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <div class="artfields fl listfields">
+            <ul>
+              <li class="likeit"><a href="javascript:viod(0)">59</a></li>
+            </ul>
+          </div>
+          <div class="medal fr">
+            <div class="colorplates colorsmall mb20">
+              <ul>
+                <li class="black"><a href="javascript:viod(0)"></a></li>
+                <li class="blue"><a href="javascript:viod(0)"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+<div class="ue_grid_1 listbox newlist">
+      <div class="sc_preview"><a target="_blank" href="/a/jituanchanye/dianxin/47.html"><img src="/uploads/190522/1-1Z5221155023b.jpg" alt="三元112" /></a> </div>
+      <div class="sc_info">
+        <div class="pdw20">
+          <h3><a target="_blank" href="/a/jituanchanye/dianxin/47.html">三元112</a></h3>
+        </div>
+        <div class="listline"></div>
+        <div class="pdw20">
+          <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <div class="artfields fl listfields">
+            <ul>
+              <li class="likeit"><a href="javascript:viod(0)">59</a></li>
+            </ul>
+          </div>
+          <div class="medal fr">
+            <div class="colorplates colorsmall mb20">
+              <ul>
+                <li class="black"><a href="javascript:viod(0)"></a></li>
+                <li class="blue"><a href="javascript:viod(0)"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+<div class="ue_grid_1 listbox newlist">
+      <div class="sc_preview"><a target="_blank" href="/a/jituanchanye/dianxin/48.html"><img src="/uploads/190522/1-1Z522115309254.jpg" alt="三元855" /></a> </div>
+      <div class="sc_info">
+        <div class="pdw20">
+          <h3><a target="_blank" href="/a/jituanchanye/dianxin/48.html">三元855</a></h3>
+        </div>
+        <div class="listline"></div>
+        <div class="pdw20">
+          <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <div class="artfields fl listfields">
+            <ul>
+              <li class="likeit"><a href="javascript:viod(0)">59</a></li>
+            </ul>
+          </div>
+          <div class="medal fr">
+            <div class="colorplates colorsmall mb20">
+              <ul>
+                <li class="black"><a href="javascript:viod(0)"></a></li>
+                <li class="blue"><a href="javascript:viod(0)"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+<div class="ue_grid_1 listbox newlist">
+      <div class="sc_preview"><a target="_blank" href="/a/jituanchanye/dianxin/57.html"><img src="/uploads/190520/1-1Z52022405E91.jpg" alt="磷酸铁锂产品" /></a> </div>
+      <div class="sc_info">
+        <div class="pdw20">
+          <h3><a target="_blank" href="/a/jituanchanye/dianxin/57.html">磷酸铁锂产品</a></h3>
+        </div>
+        <div class="listline"></div>
+        <div class="pdw20">
+          <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <div class="artfields fl listfields">
+            <ul>
+              <li class="likeit"><a href="javascript:viod(0)">59</a></li>
+            </ul>
+          </div>
+          <div class="medal fr">
+            <div class="colorplates colorsmall mb20">
+              <ul>
+                <li class="black"><a href="javascript:viod(0)"></a></li>
+                <li class="blue"><a href="javascript:viod(0)"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+<div class="ue_grid_1 listbox newlist">
+      <div class="sc_preview"><a target="_blank" href="/a/jituanchanye/dianxin/49.html"><img src="/uploads/190520/1-1Z520224402L9.jpg" alt="三元563" /></a> </div>
+      <div class="sc_info">
+        <div class="pdw20">
+          <h3><a target="_blank" href="/a/jituanchanye/dianxin/49.html">三元563</a></h3>
+        </div>
+        <div class="listline"></div>
+        <div class="pdw20">
+          <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <div class="artfields fl listfields">
+            <ul>
+              <li class="likeit"><a href="javascript:viod(0)">59</a></li>
+            </ul>
+          </div>
+          <div class="medal fr">
+            <div class="colorplates colorsmall mb20">
+              <ul>
+                <li class="black"><a href="javascript:viod(0)"></a></li>
+                <li class="blue"><a href="javascript:viod(0)"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+<div class="ue_grid_1 listbox newlist">
+      <div class="sc_preview"><a target="_blank" href="/a/jituanchanye/dianxin/50.html"><img src="/uploads/190520/1-1Z52022405E91.jpg" alt="三元241" /></a> </div>
+      <div class="sc_info">
+        <div class="pdw20">
+          <h3><a target="_blank" href="/a/jituanchanye/dianxin/50.html">三元241</a></h3>
+        </div>
+        <div class="listline"></div>
+        <div class="pdw20">
+          <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <div class="artfields fl listfields">
+            <ul>
+              <li class="likeit"><a href="javascript:viod(0)">59</a></li>
+            </ul>
+          </div>
+          <div class="medal fr">
+            <div class="colorplates colorsmall mb20">
+              <ul>
+                <li class="black"><a href="javascript:viod(0)"></a></li>
+                <li class="blue"><a href="javascript:viod(0)"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+<div class="ue_grid_1 listbox newlist">
+      <div class="sc_preview"><a target="_blank" href="/a/jituanchanye/dianxin/51.html"><img src="/uploads/190520/1-1Z52022405E91.jpg" alt="三元785" /></a> </div>
+      <div class="sc_info">
+        <div class="pdw20">
+          <h3><a target="_blank" href="/a/jituanchanye/dianxin/51.html">三元785</a></h3>
+        </div>
+        <div class="listline"></div>
+        <div class="pdw20">
+          <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <div class="artfields fl listfields">
+            <ul>
+              <li class="likeit"><a href="javascript:viod(0)">59</a></li>
+            </ul>
+          </div>
+          <div class="medal fr">
+            <div class="colorplates colorsmall mb20">
+              <ul>
+                <li class="black"><a href="javascript:viod(0)"></a></li>
+                <li class="blue"><a href="javascript:viod(0)"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+<div class="ue_grid_1 listbox newlist">
+      <div class="sc_preview"><a target="_blank" href="/a/jituanchanye/dianxin/52.html"><img src="/uploads/190520/1-1Z520225454392.jpg" alt="三元836" /></a> </div>
+      <div class="sc_info">
+        <div class="pdw20">
+          <h3><a target="_blank" href="/a/jituanchanye/dianxin/52.html">三元836</a></h3>
+        </div>
+        <div class="listline"></div>
+        <div class="pdw20">
+          <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <div class="artfields fl listfields">
+            <ul>
+              <li class="likeit"><a href="javascript:viod(0)">59</a></li>
+            </ul>
+          </div>
+          <div class="medal fr">
+            <div class="colorplates colorsmall mb20">
+              <ul>
+                <li class="black"><a href="javascript:viod(0)"></a></li>
+                <li class="blue"><a href="javascript:viod(0)"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+<div class="ue_grid_1 listbox newlist">
+      <div class="sc_preview"><a target="_blank" href="/a/jituanchanye/dianxin/53.html"><img src="/uploads/190520/1-1Z520225454392.jpg" alt="三元4568" /></a> </div>
+      <div class="sc_info">
+        <div class="pdw20">
+          <h3><a target="_blank" href="/a/jituanchanye/dianxin/53.html">三元4568</a></h3>
+        </div>
+        <div class="listline"></div>
+        <div class="pdw20">
+          <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <div class="artfields fl listfields">
+            <ul>
+              <li class="likeit"><a href="javascript:viod(0)">59</a></li>
+            </ul>
+          </div>
+          <div class="medal fr">
+            <div class="colorplates colorsmall mb20">
+              <ul>
+                <li class="black"><a href="javascript:viod(0)"></a></li>
+                <li class="blue"><a href="javascript:viod(0)"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+<div class="ue_grid_1 listbox newlist">
+      <div class="sc_preview"><a target="_blank" href="/a/jituanchanye/dianxin/54.html"><img src="/uploads/190520/190520/1-1Z52022532N16.jpg" alt="三元778" /></a> </div>
+      <div class="sc_info">
+        <div class="pdw20">
+          <h3><a target="_blank" href="/a/jituanchanye/dianxin/54.html">三元778</a></h3>
+        </div>
+        <div class="listline"></div>
+        <div class="pdw20">
+          <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <div class="artfields fl listfields">
+            <ul>
+              <li class="likeit"><a href="javascript:viod(0)">59</a></li>
+            </ul>
+          </div>
+          <div class="medal fr">
+            <div class="colorplates colorsmall mb20">
+              <ul>
+                <li class="black"><a href="javascript:viod(0)"></a></li>
+                <li class="blue"><a href="javascript:viod(0)"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="mb50" id="veiwall">
+  <div class="common" style="width: 1180px; left: 0px;"> <a href="/a/jituanchanye/">查看更多<span style=""></span></a> </div>
+</div>
+<div class="clear"></div>
+<div id="fuwu"> <img src="/dede58/images/fuwu.jpg" width="1180" height="386" usemap="#Map">
+  <map name="Map" id="Map">
+    <area shape="poly" coords="127,76,183,54,233,54,267,69,274,98,240,138,192,146,137,125,120,88,157,58,182,55,127,75,125,75,127,76" href="/a/fuwu/list_1.html" />
+    <area shape="poly" coords="406,26,444,27,471,37,480,55,475,77,443,92,404,91,375,74,370,49,388,32,406,25" href="/a/fuwu/list_1.html" />
+    <area shape="poly" coords="958,33,1020,42,1062,63,1078,84,1074,105,1034,128,986,135,935,123,894,102,880,73,906,45,959,34,959,33" href="/a/fuwu/list_1.html" />
+    <area shape="poly" coords="997,260,1034,275,1055,298,1051,324,1017,336,965,334,925,317,929,283,969,260" href="/a/fuwu/list_1.html" />
+    <area shape="poly" coords="701,297,739,316,747,336,730,353,693,359,658,357,633,337,637,312,668,297,702,297" href="/a/fuwu/list_1.html" />
+    <area shape="poly" coords="464,291,506,296,541,313,536,339,497,349,472,348,445,347,410,335,402,306,438,293,463,290" href="/a/fuwu/list_1.html" />
+    <area shape="poly" coords="225,272,257,269,292,274,316,289,328,305,329,326,313,343,290,352,264,356,234,355,209,350,188,338,178,307,191,286,224,272" href="/a/fuwu/list_1.html" />
+  </map>
+</div>
+
+<!-------->
+<div class="casetitle">
+  <h1>新闻<strong>News</strong></h1>
+  <p>关注织梦58，关注网络前沿<br>
+    recently is to do...</p>
+  <a class="more" href="/a/xinwenzhongxin/list_1.html">+更多新闻</a> </div>
+
+<!-----------> 
+
+<!-------------->
+
+<section id="news">
+  <div class="newsdata">
+    <div class="newsad"> <a href="/a/kehufuwu/tousujianyi/"><img width="320" height="485" alt="html5" src="/dede58/images/20120905120453504.jpg"></a> </div>
+    <ul>
+      <li> <a href="/a/xinwenzhongxin/111.html"><img width="95" height="67" alt="" src="/uploads/190520/22.jpg"></a>
+        <div class="newslist"> <a title="" href="/a/xinwenzhongxin/111.html"></a> <span>UPTATED:2019-05-22</span>
+          <p>心系贫困生 捐款献爱心——中科新能源董事长爱心捐助贫困生...</p>
+        </div>
+      </li>
+<li> <a href="/a/xinwenzhongxin/106.html"><img width="95" height="67" alt="" src="/uploads/allimg/190522/1-1Z5221255150-L.jpg"></a>
+        <div class="newslist"> <a title="" href="/a/xinwenzhongxin/106.html"></a> <span>UPTATED:2019-05-22</span>
+          <p>金台经济开发区党工委副书记、管委会副主任丁磊：对《中科锂电新能源科创产业园》项目十分认可，该项目与定...</p>
+        </div>
+      </li>
+<li> <a href="/a/xinwenzhongxin/107.html"><img width="95" height="67" alt="" src="/uploads/190520/22.jpg"></a>
+        <div class="newslist"> <a title="" href="/a/xinwenzhongxin/107.html"></a> <span>UPTATED:2019-05-22</span>
+          <p>河北省发展改革委主任党晓龙：《中科锂电新能源科创产业园》项目将做为省重点项目...</p>
+        </div>
+      </li>
+<li> <a href="/a/xinwenzhongxin/110.html"><img width="95" height="67" alt="" src="/uploads/190520/11.jpg"></a>
+        <div class="newslist"> <a title="" href="/a/xinwenzhongxin/110.html"></a> <span>UPTATED:2019-05-22</span>
+          <p>中科院北京纳米能源与系统研究所首席科学家兼所长王中林应邀赴河北省发展改革委作报告...</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<!-------------->
+
+<div id="backtop"></div>
+<!---case---> 
+
+<section id="bottom">
+<div class="footer">
+  
+<link rel="stylesheet" href="/dede58/css/lightbox.css" type="text/css" />
+<script src="/dede58/js/photoslide.js"></script>
+<script src="/dede58/js/lightbox.js"></script>
+
+<script type="text/javascript">
+<!--
+picrun_ini()
+//-->
+</script>
+
+<div class="clear"></div>
+<!--公司相册-->
+
+<div class="webmap">
+                <ul>
+		<li><a href="/a/zoujinzhongke/" target="_self"><strong>走进中科</strong></a></li>
+        
+            <li><a href="/a/zoujinzhongke/" target="_self">公司简介</a></li>
+        
+            <li><a href="/a/fangan/big/" target="_self">发展历程</a></li>
+        
+            <li><a href="/a/fangan/gongsirongyu/" target="_self">公司荣誉</a></li>
+        
+            <li><a href="/a/fangan/shehuigongyi/" target="_self">社会公益</a></li>
+        
+	</ul><ul>
+		<li><a href="/a/fuwu/list_1.html" target="_self"><strong>企业文化</strong></a></li>
+        
+            <li><a href="/a/zhongkejingshen/" target="_self">中科精神</a></li>
+        
+            <li><a href="/a/fuwu/qiyelinian/" target="_self">企业理念</a></li>
+        
+	</ul><ul>
+		<li><a href="/a/jituanchanye/" target="_self"><strong>集团产业</strong></a></li>
+        
+            <li><a href="/a/jituanchanye/dianxin/" target="_self">电芯</a></li>
+        
+            <li><a href="/a/jituanchanye/mozu/" target="_self">模组</a></li>
+        
+            <li><a href="/a/jituanchanye/xitong/" target="_self">系统</a></li>
+        
+	</ul><ul>
+		<li><a href="/a/xinwenzhongxin/list_1.html" target="_self"><strong>新闻中心</strong></a></li>
+        
+	</ul><ul>
+		<li><a href="/a/kehufuwu/" target="_self"><strong>客户服务</strong></a></li>
+        
+            <li><a href="/a/zaixianzixun/" target="_self">在线咨询</a></li>
+        
+            <li><a href="/a/kehufuwu/tousujianyi/" target="_self">投诉建议</a></li>
+        
+            <li><a href="/a/kehufuwu/a/kehufuwu/lianxiwomen/" target="_self">联系我们</a></li>
+        
+	</ul><ul>
+		<li><a href="/a/contact/index.html" target="_self"><strong>联系我们</strong></a></li>
+        
+            <li><a href="/a/contact/a/contact/rencailinian/" target="_self">人才理念</a></li>
+        
+            <li><a href="/a/contact/a/contact/zhiweizhaopin/" target="_self">职位招聘</a></li>
+        
+	</ul> 
+	
+<style>
+.baidu{
+	height:18px;line-height:18px;transition: all 0.35s ease-out 0s;color:#929292;
+}
+.baidu:hover{
+	color:#fff;
+	cursor:pointer;
+	text-decoration:underline;
+}
+</style> 
+	
+	<div class="clear"></div>
+</div>
+
+<!--版权所有-->
+	
+<div class="clear"></div>
+</div>
+<!---footer end-->
+  <div class="clear"></div>
+
+
+
+</section>
+
+<script>
+	
+function goTopEx(){
+        var obj=document.getElementById("goTopBtn");
+        function getScrollTop(){
+                return document.body.scrollTop+document.documentElement.scrollTop;
+            }
+        function setScrollTop(value){
+                document.body.scrollTop=value;
+				document.documentElement.scrollTop=value;
+				
+            }    
+        window.onscroll=function(){getScrollTop()>700?obj.style.display="":obj.style.display="none";}
+        obj.onclick=function(){
+            var goTop=setInterval(scrollMove,10);
+            function scrollMove(){
+                    setScrollTop(getScrollTop()/1.1);
+                    if(getScrollTop()<1)clearInterval(goTop);
+                }
+        }
+    }	
+</script>
+<div style="DISPLAY: none" id=goTopBtn></div>
+<script type=text/javascript>goTopEx();</script>
+<div class="bottom_links">
+  <div class="container">
+    <div class="jiaohuan">友情链接交换请加QQ：962938625　</div>
+    <div class="youlian"> <a href='http://www.dede58.com' target='_blank'>织梦模板</a>  | <a href='http://www.dede58.com' target='_blank'>技术支持</a>  | <a href='http://www.dede58.com' target='_blank'>织梦源码</a>  | 
+	<a href="http://www.dede58.com" target="_blank">织梦58</a>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<!--links end-->
+</body>
+</html>

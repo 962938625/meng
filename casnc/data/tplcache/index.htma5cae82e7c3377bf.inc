@@ -1,0 +1,44 @@
+<?php
+$z[0]=Array("global","",1539,1565);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",1609,1639);
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",1676,1703);
+$z[2][4]['name']="cfg_keywords";
+$z[3]=Array("include","",3045,3080);
+$z[3][4]['filename']="head.htm";
+$z[4]=Array("arclist","\r\n    <div class=\"ue_grid_1 listbox newlist\">\r\n            <div class=\"sc_preview\"><a target=\"_blank\" href=\"[field:arcurl/]\"><img src=\"[field:litpic/]\" alt=\"[field:fulltitle/]\" /></a>\r\n            </div>\r\n            <div class=\"sc_info\">\r\n              \r\n              <div class=\"pdw20\">\r\n                <h3><a target=\"_blank\" href=\"[field:arcurl/]\">[field:title/]</a></h3>\r\n			  </div>\r\n              \r\n              <div class=\"listline\"></div>\r\n              <div class=\"pdw20\">\r\n				<div class=\"bdsharebuttonbox fl\"><a href=\"#\" class=\"bds_more\" data-cmd=\"more\"></a><a href=\"#\" class=\"bds_weixin\" data-cmd=\"weixin\" title=\"分享到微信\"></a><a href=\"#\" class=\"bds_tsina\" data-cmd=\"tsina\" title=\"分享到新浪微博\"></a></div>\r\n<script>window._bd_share_config={\"common\":{\"bdSnsKey\":{},\"bdText\":\"\",\"bdMini\":\"2\",\"bdMiniList\":false,\"bdPic\":\"\",\"bdStyle\":\"2\",\"bdSize\":\"16\"},\"share\":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>\r\n\r\n                <div class=\"artfields fl listfields\">\r\n                  <ul>\r\n					  <li class=\"likeit\"><a href=\"javascript:viod(0)\">[field:click/]</a></li>\r\n                  </ul>\r\n                </div>\r\n\r\n                <div class=\"medal fr\">\r\n                    <div class=\"colorplates colorsmall mb20\">\r\n                <ul>\r\n			                  <li class=\"black\"><a href=\"javascript:viod(0)\"></a></li>\r\n			                  <li class=\"blue\"><a href=\"javascript:viod(0)\"></a></li>\r\n			                  \r\n                </ul>\r\n                  </div>\r\n				</div>\r\n                <div class=\"clear\"></div>\r\n              </div>\r\n              <div class=\"clear\"></div>\r\n            </div>\r\n          </div>\r\n		 ",5131,7004);
+$z[4][4]['row']="12";
+$z[4][4]['titlelen']="32";
+$z[4][4]['typeid']="13";
+$z[5]=Array("type","[field:typeurl /]",7163,7215);
+$z[5][4]['typeid']="13";
+$z[6]=Array("type","[field:typeurl /]",7553,7604);
+$z[6][4]['typeid']="6";
+$z[7]=Array("type","[field:typeurl /]",7723,7774);
+$z[7][4]['typeid']="6";
+$z[8]=Array("type","[field:typeurl /]",7917,7968);
+$z[8][4]['typeid']="6";
+$z[9]=Array("type","[field:typeurl /]",8086,8137);
+$z[9][4]['typeid']="6";
+$z[10]=Array("type","[field:typeurl /]",8259,8310);
+$z[10][4]['typeid']="6";
+$z[11]=Array("type","[field:typeurl /]",8440,8491);
+$z[11][4]['typeid']="6";
+$z[12]=Array("type","[field:typeurl /]",8653,8704);
+$z[12][4]['typeid']="6";
+$z[13]=Array("type","[field:typeurl /]",8895,8947);
+$z[13][4]['typeid']="20";
+$z[14]=Array("type","[field:typeurl /]",9094,9146);
+$z[14][4]['typeid']="19";
+$z[15]=Array("arclist","\r\n	      <li> <a href=\"[field:arcurl/]\"><img width=\"95\" height=\"67\" alt=\"[field:fulltitle/]\" src=\"[field:litpic/]\"></a>\r\n        <div class=\"newslist\"> <a title=\"[field:fulltitle/]\" href=\"[field:arcurl/]\">[field:title/]</a> <span>UPTATED:[field:pubdate function=\"MyDate('Y-m-d',@me)\"/]</span>\r\n          <p>[field:info/]...</p>\r\n        </div>\r\n      </li>\r\n	  ",9259,9681);
+$z[15][4]['row']="4";
+$z[15][4]['titlelen']="32";
+$z[15][4]['infolen']="100";
+$z[16]=Array("include","",9801,9838);
+$z[16][4]['filename']="footer.htm";
+$z[17]=Array("global","",9939,9956);
+$z[17][4]['name']="qq";
+$z[18]=Array("flink","[field:link/] | ",9995,10036);
+
+?>

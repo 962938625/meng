@@ -1,0 +1,1 @@
+<li><a href="[field:typeurl/]" class="googleplus"><i class="icon-mobile"></i><span>[field:typename/]</span></a></li>

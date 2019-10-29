@@ -1,0 +1,242 @@
+/* dede58.com 做最好的织梦模板 */
+@charset "utf-8";
+h1, h2, h3, h4, h5, h6 {
+	font-family:'微软雅黑';
+	font-weight:bold;
+}
+.warpyly {
+	width:1180px;
+	margin:0 auto;
+	background:#fff;
+	font-family:'微软雅黑';
+	padding-bottom:50px;
+}
+.ydtitle {
+	color:#fff;
+	background:#ec1a23;
+	height:100px;
+	text-align:center;
+	border-bottom:5px solid #f2ebeb;
+}
+.ydtitle2 {
+	margin-top:50px;
+}
+.ydtitle h1 {
+	font-size:35px;
+	padding-top:15px;
+	color:#fff;
+}
+.ydtitle h2 {
+	font-size:20px;
+	color:#fff;
+	font-weight:normal;
+}
+.ydyuyue {
+	height:50px;
+ background:;
+	line-height:50px;
+	margin-top:70px;
+	text-align:center;
+	color:#fff;
+	display:block;
+	font-weight:bold;
+	font-size:20px;
+	padding-right:20px;
+	background:url(../images/yidongjiantou.png) no-repeat 630px center #ccc;
+	transition: all 0.2s linear 0s;
+}
+.ydyuyue:hover {
+	background:url(../images/yidongjiantou.png) no-repeat 630px center #ff0000;
+}
+/**/
+
+.dianshangyinyu {
+	padding:50px 30px 0 30px;
+	background:url(../images/dianshangyinyubg.jpg) no-repeat right top;
+}
+.dianshangyinyunr {
+	width:590px;
+}
+.dianshangyinyunr h1 {
+	font-size:28px;
+	color:#333;
+	line-height:45px;
+	margin-bottom:20px;
+}
+.dianshangyinyunr p {
+	color:#555555;
+	font-size:15px;
+	line-height:28px;
+}
+.dianshangliucheng {
+	border-top:1px dashed #e9e9e9;
+	margin-top:80px;
+	padding:40px 20px 0 20px;
+}
+.dslc {
+	margin-right:95px;
+	text-align:center;
+	width:140px;
+}
+.dslcpic {
+	width:140px;
+	height:140px;
+	background:url(../images/dianshangfenlei.jpg) no-repeat;
+}
+.dslcpic1 {
+	background-position:0 0;
+}
+.dslcpic2 {
+	background-position:0 -140px;
+}
+.dslcpic3 {
+	background-position:0 -280px;
+}
+.dslcpic4 {
+	background-position:0 -420px;
+}
+.dslcpic5 {
+	background-position:0 -560px;
+}
+.dslc1 {
+	margin-right:0;
+}
+.dslc p {
+	font-size:16px;
+	color:#454545;
+	padding-top:15px;
+}
+.dianshangtitle {
+	height:50px;
+	width:100%;
+	background:url(../images/dianshangtitle.jpg) no-repeat;
+	margin-top:80px;
+}
+.dianshangtitle1 {
+	background-position:0 0;
+}
+.dianshangtitle2 {
+	background-position:0 -50px;
+}
+.dianshangtitle3 {
+	background-position:0 -100px;
+}
+.dianshangtitle4 {
+	background-position:0 -150px;
+}
+.dianshangtitle5 {
+	background-position:0 -200px;
+}
+.dianshangpingtai, .dianshangpaishe, .dianshangcehua, .dianshangzhuangxiu, .dianshangyunying {
+	padding:0 30px;
+}
+.dianshangpingtai h2, .dianshangpaishe h2, .dianshangcehua h2, .dianshangzhuangxiu h2, .dianshangyunying h2 {
+	color: #333333;
+	font-family: '微软雅黑';
+	font-size: 18px;
+	line-height: 30px;
+	margin-top: 40px;
+}
+.dianshangpingtainr {
+	padding-top:60px;
+	background:url(../images/dianshangpingtai.jpg) no-repeat left 60px;
+}
+.dspt {
+	width:560px;
+	margin:30px 60px 0 0;
+}
+.dsptlist {
+	height:40px;
+	line-height:40px;
+	margin-bottom:30px;
+}
+.dsptlist .dspttext {
+	width:430px;
+	border-radius:1px;
+	background:#f2f2f2;
+	color:#666666;
+	font-size:15px;
+	padding-left:20px;
+}
+.dsptlist .dsptlv {
+	background:#6bc30d;
+	width:90px;
+	border-radius:1px;
+	color:#fff;
+	font-weight:bold;
+	font-size:18px;
+	text-align:center;
+}
+/*dianshangpingtai end*/
+.dianshangpaishenr {
+	margin-top:40px;
+}
+.dsps {
+	width:540px;
+}
+.dspstitle {
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	font-weight:bold;
+	font-size:18px;
+	padding-left:20px;
+	width:520px;
+	background:#6bc30d;
+}
+.dianshangcehuanr {
+	text-align:center;
+	margin-top:60px;
+}
+/*dianshangcehua end*/
+.dianshangzhuangxiunr {
+	margin-top:15px;
+}
+.zhuangxiulist {
+	width:240px;
+	background:#6bc30d;
+	border-radius:1px;
+	margin:25px 53px 25px 0;
+	height:140px;
+	text-align:center;
+}
+.zhuangxiulist p {
+	color:#fff;
+	font-weight:bold;
+	font-size:20px;
+	padding-top:45px;
+	width:200px;
+	margin:0 auto;
+}
+.zhuangxiulist1 {
+	margin:25px 0 25px 0;
+}
+/*dianshangzhuangxiu end*/
+.cehualist {
+	margin-top: 20px;
+}
+.cehuaitem {
+	height: 100px;
+	padding-top: 20px;
+}
+.cehuaitemyuan {
+	background: url("../images/webyuanbg.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	color: #FFFFFF;
+	font-size: 15px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	width: 100px;
+}
+.cehuaitemtext {
+	background: none repeat scroll 0 0 #F2F2F2;
+	border-radius: 1px;
+	color: #666666;
+	font-size: 15px;
+	height: 42px;
+	line-height: 23px;
+	margin-top: 20px;
+	padding: 18px 20px 0;
+	width: 950px;
+}
+/*dianshangyunying end*/

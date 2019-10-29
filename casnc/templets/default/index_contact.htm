@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="/dede58/js/html5shiv.js"></script>
+<![endif]-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" id="color-variation" href="/dede58/css/beb.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/dede58/css/case.css" />
+<link rel="stylesheet" type="text/css" href="/dede58/css/contact.css" />
+<style type="text/css">
+body, td, th {
+	font-family: Verdana, Geneva, sans-serif;
+}
+</style>
+<style>
+.gmap3 {
+	width: 100%;
+	height: 450px;
+	margin-bottom:50px;
+}
+section.page-top {
+	margin-bottom:0px;
+}
+</style>
+<script src="/dede58/js/jquery.min.js"></script><!--JQUERY-->
+<script src="/dede58/js/includer.js"></script>
+</head>
+
+<body data-smooth-scrolling="1">
+<!--[if lte IE 7]><script src="/dede58/js/lte-ie7.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/dede58/css/style.css" />
+{dede:include filename="head.htm"/}
+<div class="clear"></div>
+<section class="page-top">
+  <div class="container">
+    <div class="three-fourth">
+      <h1>联系我们</h1>
+      <ul class="breadcrumb">
+        {dede:field name='position'/}
+      </ul>
+    </div>
+    <div class="one-fourth last">
+      <div id="search-text" class="search-text">
+        <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+          <input type="hidden" name="kwtype" value="0" />
+          <input type="text" class="sousuo"  placeholder="搜索" name="q" />
+          <input type="submit" name="submit" class="tijiao" />
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------------->
+
+<div style="width:100%;clear:both; height:450px;margin-bottom:50px;box-shadow:0 0 5px 2px rgba(54, 55, 54, 0.25); background-color: #E5E3DF;">
+  <iframe src="/ditu.html" id="ifrm" name="ifrm" width="100%" height="100%" frameborder="0" scrolling="no" onload="document.all('ifrm').style.height=ifrm.document.body.scrollHeight+30;"></iframe>
+</div>
+<section id="content" class="mb50">
+  <section class="container"> 
+    
+    <!--yly-2014-2-9-->
+    
+    <div class="clear"></div>
+    <div class="contactyly">
+      <div class="contacttext">
+        <h1>Thanks !</h1>
+        <h2>我们一直努力成为最好的创意策划型互联网服务企业</h2>
+        <h3>您能给我们多少信任，我们就能给你多大惊喜</h3>
+      </div>
+      <div class="contactlianxi"> <strong>联系方式</strong>
+        <p>{dede:field.address/}</p>
+        <p>admin@dede58.com</p>
+        <p>400-8888-888</p>
+      </div>
+      <!--contacttext end-->
+      <div class="contacterweima"> <img src="/dede58/images/erweima.jpg" /> </div>
+      <!--contacterweima end--> 
+    </div>
+    <!--yly-2014-2-9--> 
+  </section>
+</section>
+<!--------------->
+
+<div class="clear"></div>
+<div id="backtop"></div>
+<!---case---> 
+
+{dede:include filename="footer.htm"/}
+</body>
+</html>

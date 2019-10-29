@@ -1,0 +1,75 @@
+<section id="bottom">
+<div class="footer">
+  
+<link rel="stylesheet" href="/dede58/css/lightbox.css" type="text/css" />
+<script src="/dede58/js/photoslide.js"></script>
+<script src="/dede58/js/lightbox.js"></script>
+
+<script type="text/javascript">
+<!--
+picrun_ini()
+//-->
+</script>
+
+<div class="clear"></div>
+<!--公司相册-->
+
+<div class="webmap">
+                {dede:channelartlist typeid='top'}  
+	<ul>
+		<li><a href="{dede:field name='typeurl'/}" target="_self"><strong>{dede:field name='typename'/}</strong></a></li>
+        {dede:channel type='son' noself='yes'}
+            <li><a href="[field:typelink/]" target="_self">[field:typename/]</a></li>
+        {/dede:channel}
+	</ul>
+    {/dede:channelartlist} 
+	
+<style>
+.baidu{
+	height:18px;line-height:18px;transition: all 0.35s ease-out 0s;color:#929292;
+}
+.baidu:hover{
+	color:#fff;
+	cursor:pointer;
+	text-decoration:underline;
+}
+</style> 
+	
+	<div class="clear"></div>
+</div>
+
+<!--版权所有-->
+	
+<div class="clear"></div>
+</div>
+<!---footer end-->
+  <div class="clear"></div>
+
+
+
+</section>
+
+<script>
+	
+function goTopEx(){
+        var obj=document.getElementById("goTopBtn");
+        function getScrollTop(){
+                return document.body.scrollTop+document.documentElement.scrollTop;
+            }
+        function setScrollTop(value){
+                document.body.scrollTop=value;
+				document.documentElement.scrollTop=value;
+				
+            }    
+        window.onscroll=function(){getScrollTop()>700?obj.style.display="":obj.style.display="none";}
+        obj.onclick=function(){
+            var goTop=setInterval(scrollMove,10);
+            function scrollMove(){
+                    setScrollTop(getScrollTop()/1.1);
+                    if(getScrollTop()<1)clearInterval(goTop);
+                }
+        }
+    }	
+</script>
+<div style="DISPLAY: none" id=goTopBtn></div>
+<script type=text/javascript>goTopEx();</script>

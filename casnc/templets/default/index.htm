@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="/dede58/js/html5shiv.js"></script>
+<![endif]-->
+
+<head>
+<script>
+var bs={
+        versions:function(){
+           var u = navigator.userAgent, app = navigator.appVersion;
+           return {//移动终端浏览器版本信息
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1 //是否iPad                
+            };
+         }(),
+         language:(navigator.browserLanguage || navigator.language).toLowerCase()
+    } 
+    if(bs.versions.mobile){
+        if(bs.versions.android||bs.versions.iPhone||bs.versions.iPad||bs.versions.ios){
+            window.location.href="/wap/wap.php";
+        }
+    }
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="design by www.dede58.com" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" id="color-variation" href="/dede58/css/beb.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/dede58/css/case.css" />
+<link rel="stylesheet" type="text/css" href="/dede58/css/layerslider.css" />
+<style type="text/css">
+body, td, th {
+	font-family: Verdana, Geneva, sans-serif;
+}
+</style>
+<script src="/dede58/js/jquery.min.js"></script><!--JQUERY-->
+<script src="/dede58/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="/dede58/js/includer.js"></script>
+</head>
+
+<body data-smooth-scrolling="1">
+<!--[if lt IE 0]>
+
+	<DIV class="alert alert-block ie-alert" id="iehack">
+	  <div style="float:right;"><BUTTON class=close data-dismiss="alert" onClick='javascript:closeiehack();'>×</BUTTON></div>
+	  <H4>浏览器版本过低</H4>
+	  <P>你知道不？你还在用十年前的浏览器！这个网页上的有很多好看的东西和动画效果都显示不了！</P>
+	  <P>建议赶快升级你的浏览器版本或使用Chrome或Safari等高级浏览器。</P>
+	</DIV>
+<script language="javascript">
+function closeiehack(){
+	theObj = document.getElementById('iehack').style;
+	theObj.display = "none";
+}
+</script>
+<![endif]--> 
+
+<!--[if lte IE 7]><script src="/dede58/js/lte-ie7.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/dede58/css/style.css" />
+{dede:include filename="head.htm"/}
+<div class="clear"></div>
+<!--背景大图 b-->
+<div id="slide-index">
+  <div class=slides>
+    <div class="slide autoMaxWidth">
+      <div id=bi_0 class=image><a href="javascript:viod(0);"><img src="/dede58/images/banner-1.jpg"></a></div>
+      <div id=bt_0 class=text></div>
+      <div id=bb_0 class=button></div>
+    </div>
+    <div class="slide autoMaxWidth">
+      <div id=bi_0 class=image><a href="javascript:viod(0);"><img src="/dede58/images/banner-2.jpg" /></a></div>
+      <div id=bt_0 class=text></div>
+      <div id=bb_0 class=button></div>
+    </div>
+    <div class="slide autoMaxWidth">
+      <div id=bi_0 class=image><a href="javascript:viod(0);" ><img src="/dede58/images/banner-4.jpg"></a></div>
+      <div id=bt_0 class=text></div>
+      <div id=bb_0 class=button></div>
+    </div>
+  </div>
+  <div class=control><a href="javascript:viod(0);"></a><a href="javascript:viod(0);"></a><a href="javascript:viod(0);"></a></div>
+</div>
+<script type=text/javascript>
+$(function(){	
+	indexSlides.ini();
+});
+var indexSlides={};
+indexSlides.timer=false;
+indexSlides.total=$('#slide-index .control a').length;
+indexSlides.current=-1;
+indexSlides.offScreenLeft=2000;
+indexSlides.leaveScreenLeft=4000;
+indexSlides.animating=false;
+indexSlides.obj=$('#slide-index .slide');
+indexSlides.style=[];
+indexSlides.style[0]={
+	text:{left:'30px',top:'81px'},
+	button:{left:'30px',top:'244px'},
+	direction:'tb'
+};
+	
+indexSlides.style[1]={
+	text:{left:'30px',top:'81px'},
+	button:{left:'30px',top:'244px'},
+	direction:'tb'
+};
+	
+indexSlides.style[2]={
+	text:{left:'30px',top:'81px'},
+	button:{left:'30px',top:'244px'},
+	direction:'tb'
+};
+	
+</script> 
+<script type=text/javascript src="/dede58/js/banner.js"></script> 
+
+<!--背景大图 e--> 
+
+<!--MAIN WRAPPER ENDS -->
+
+<div class="clear"></div>
+<div class="casetitle">
+  <h1>案例<strong>Cases</strong></h1>
+  <p>我们的作品，他们的故事<br>
+    Our work, their stories </p>
+  <a class="more" href="/jituanchanye/">+更多案例</a> </div>
+
+<!---case--->
+<div id="list">
+  <div class="common"> {dede:arclist row=12 titlelen=32 typeid='13'}
+    <div class="ue_grid_1 listbox newlist">
+      <div class="sc_preview"><a target="_blank" href="[field:arcurl/]"><img src="[field:litpic/]" alt="[field:fulltitle/]" /></a> </div>
+      <div class="sc_info">
+        <div class="pdw20">
+          <h3><a target="_blank" href="[field:arcurl/]">[field:title/]</a></h3>
+        </div>
+        <div class="listline"></div>
+        <div class="pdw20">
+          <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <div class="artfields fl listfields">
+            <ul>
+              <li class="likeit"><a href="javascript:viod(0)">[field:click/]</a></li>
+            </ul>
+          </div>
+          <div class="medal fr">
+            <div class="colorplates colorsmall mb20">
+              <ul>
+                <li class="black"><a href="javascript:viod(0)"></a></li>
+                <li class="blue"><a href="javascript:viod(0)"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    {/dede:arclist}
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="mb50" id="veiwall">
+  <div class="common" style="width: 1180px; left: 0px;"> <a href="{dede:type typeid='13'}[field:typeurl /]{/dede:type}">查看更多<span style=""></span></a> </div>
+</div>
+<div class="clear"></div>
+<div id="fuwu"> <img src="/dede58/images/fuwu.jpg" width="1180" height="386" usemap="#Map">
+  <map name="Map" id="Map">
+    <area shape="poly" coords="127,76,183,54,233,54,267,69,274,98,240,138,192,146,137,125,120,88,157,58,182,55,127,75,125,75,127,76" href="{dede:type typeid='6'}[field:typeurl /]{/dede:type}" />
+    <area shape="poly" coords="406,26,444,27,471,37,480,55,475,77,443,92,404,91,375,74,370,49,388,32,406,25" href="{dede:type typeid='6'}[field:typeurl /]{/dede:type}" />
+    <area shape="poly" coords="958,33,1020,42,1062,63,1078,84,1074,105,1034,128,986,135,935,123,894,102,880,73,906,45,959,34,959,33" href="{dede:type typeid='6'}[field:typeurl /]{/dede:type}" />
+    <area shape="poly" coords="997,260,1034,275,1055,298,1051,324,1017,336,965,334,925,317,929,283,969,260" href="{dede:type typeid='6'}[field:typeurl /]{/dede:type}" />
+    <area shape="poly" coords="701,297,739,316,747,336,730,353,693,359,658,357,633,337,637,312,668,297,702,297" href="{dede:type typeid='6'}[field:typeurl /]{/dede:type}" />
+    <area shape="poly" coords="464,291,506,296,541,313,536,339,497,349,472,348,445,347,410,335,402,306,438,293,463,290" href="{dede:type typeid='6'}[field:typeurl /]{/dede:type}" />
+    <area shape="poly" coords="225,272,257,269,292,274,316,289,328,305,329,326,313,343,290,352,264,356,234,355,209,350,188,338,178,307,191,286,224,272" href="{dede:type typeid='6'}[field:typeurl /]{/dede:type}" />
+  </map>
+</div>
+
+<!-------->
+<div class="casetitle">
+  <h1>新闻<strong>News</strong></h1>
+  <p>关注织梦58，关注网络前沿<br>
+    recently is to do...</p>
+  <a class="more" href="{dede:type typeid='20'}[field:typeurl /]{/dede:type}">+更多新闻</a> </div>
+
+<!-----------> 
+
+<!-------------->
+
+<section id="news">
+  <div class="newsdata">
+    <div class="newsad"> <a href="{dede:type typeid='19'}[field:typeurl /]{/dede:type}"><img width="320" height="485" alt="html5" src="/dede58/images/20120905120453504.jpg"></a> </div>
+    <ul>
+      {dede:arclist row=4 titlelen=32 infolen='100'}
+      <li> <a href="[field:arcurl/]"><img width="95" height="67" alt="[field:fulltitle/]" src="[field:litpic/]"></a>
+        <div class="newslist"> <a title="[field:fulltitle/]" href="[field:arcurl/]">[field:title/]</a> <span>UPTATED:[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>
+          <p>[field:info/]...</p>
+        </div>
+      </li>
+      {/dede:arclist}
+    </ul>
+  </div>
+</section>
+
+<!-------------->
+
+<div id="backtop"></div>
+<!---case---> 
+
+{dede:include filename="footer.htm"/}
+<div class="bottom_links">
+  <div class="container">
+    <div class="jiaohuan">友情链接交换请加QQ：{dede:global.qq/}　</div>
+    <div class="youlian"> {dede:flink}[field:link/] | {/dede:flink}
+	<a href="http://www.dede58.com" target="_blank">织梦58</a>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<!--links end-->
+</body>
+</html>

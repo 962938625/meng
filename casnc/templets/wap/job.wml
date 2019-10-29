@@ -1,0 +1,201 @@
+<?php
+$varlist = "cfg_webname,title,body,channellist,cfg_templeturl,newartlist,Wap_templeturl,ads_google,wap_keyword,wap_description";
+//ConvertCharset($varlist);    //如果是utf-8就去掉这一行
+$pageBody = '<'.'?xml version="1.0" encoding="gb2312" ?'.">\r\n";
+$pageBody .="<?xml version='1.0' encoding='gb2312' ?>
+
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' class='loading'>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=gb2312' />
+<meta http-equiv='X-UA-Compatible' content='IE=EmulateIE7' />
+<meta name='viewport' content='width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0' />
+<link rel='stylesheet' type='text/css' href='/dede58/html5/css/style.css' />
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<meta content='black' name='apple-mobile-web-app-status-bar-style'>
+<meta content='telephone=no' name='format-detection'>
+<title>{$cfg_webname}</title>
+</head>
+
+<body>
+<script>
+	var now_page = 1,
+	search_value = '';
+</script>
+	  <div id='menu'>
+		<div class='search_wrap'>
+		
+            <form action='wap.php' method='get'>
+                <input type='hidden' name='action' value='search' />
+                <input type='text' class='search_input' placeholder='关键字查找' name='q' value=''>
+                <i class='reset_input'><i></i></i>
+            </form>
+            
+		</div>
+		<ul>
+			<li CLASS='nav_index '><a HREF='/wap/wap.php'><i></i><span>首页</span><b></b><div CLASS='clear'></div></a></li>
+            <li class='nav_inspire '><a href='wap.php?action=caselist&id=13'><i></i><span>案例</span><b></b><div class='clear'></div></a></li>
+			<li CLASS='nav_about  menu_cur'><a HREF='wap.php?action=list&id=20'><i></i><span>动态</span><b></b><div CLASS='clear'></div></a></li>
+			<li CLASS='nav_help '><a HREF='wap.php?action=about'><i></i><span>关于</span><b></b><div CLASS='clear'></div></a></li>
+			<li CLASS='nav_site '><a HREF='wap.php?action=job'><i></i><span>加入</span><b></b><div CLASS='clear'></div></a></li>
+		</ul>
+	</div>
+            
+        <div id='user'>
+					<div class='account'>
+				<div class='login_b_t'>
+					<div class='pd10'>
+						<div><span>您能给我们多少信任，我们就能给你多大惊喜</span></div>
+					</div>
+				</div>
+			</div>
+			<div class='pd10'>
+					<div class='login_b_i'>
+                    	<p>{$address}</p>
+						<p>{$tel}</p>
+					</div>
+					<a class='login_submit' href='tel:{$tel}' title='热线电话' data-ajax='false'>拨打电话</a>
+				
+			</div>
+			</div> 
+	<div id='header'>
+		<div class='wrap'>
+			<i class='menu_open'></i>
+			<div class='logo'><a href='/wap/wap.php'><img src='/dede58/html5/images/logo.png' /></a></div>
+			<i class='search_open'></i>
+		</div>
+		<div class='logo_msk'></div>
+	</div>
+	<div id='container'>
+
+		<div id='content'>	
+			<div class='listbody' id='list2'>
+                <p>
+	<img src='/dede58/html5/images/job.jpg' alt='' /> 
+</p>            </div>
+		</div>
+		
+		<div class='push_msk'></div>
+
+	</div>
+              <!--foot start-->
+
+        <div id='fixed'>
+			<table width='100%' border='0' cellspacing='0'>
+				<tr>
+					<td class='sort_left'>
+						<div class='sort_cate'>
+							<div class='sort_b'><a href='/wap/wap.php' data-ajax='false'><div class='sort_b_inner'><span>首页</span><div class='clear'></div></div></a></div>
+						</div>
+					</td>
+					<td>
+						<div class='sort_tag'>
+							<div class='sort_b'><a title='网络地图' href='{$mapaddress}' rel='external' data-ajax='false'><div class='sort_b_inner'><span>地图</span><div class='clear'></div></div></a></div>
+						</div>
+					</td>
+					<td class='sort_right'>
+						<div class='sort_sort'>
+							<div class='sort_b'><a href='tel:{$tel}' title='热线电话' data-ajax='false'><div class='sort_b_inner'><span>电话</span><div class='clear'></div></div></a></div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!--foot end-->          
+
+		      <div id='sort_content'>
+		<div class='asort'>
+			<div class='hd'>
+				<div class='wrap'>
+					<div class='fl'><span>解决方案</span><div class='clear'></div></div>
+					<div class='fr'></div>
+					<div class='clear'></div>
+				</div>
+			</div>
+			<div class='ct ctf'>
+				<div class='wrap'>
+					<ul class='choose_cate'>
+												<li t_data='soindustrys[]=方案'><i class='s'></i><span>方案</span><i class='e'></i></li>
+												<li t_data='tid[]=38'><i class='s'></i><span>中小企业解决方案</span><i class='e'></i></li>
+												<li t_data='tid[]=39'><i class='s'></i><span>大型企业解决方案</span><i class='e'></i></li>
+												<li t_data='tid[]=40'><i class='s'></i><span>淘宝店铺解决方案</span><i class='e'></i></li>
+												<li t_data='tid[]=41'><i class='s'></i><span>天猫商城解决方案</span><i class='e'></i></li>
+											</ul>
+					<div class='clear'></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class='asort'>
+			<div class='hd'>
+				<div class='wrap'>
+					<div class='fl'><i></i><span>产品与服务</span><div class='clear'></div></div>
+					<div class='fr'></div>
+					<div class='clear'></div>
+				</div>
+			</div>
+			<div class='ct ctfff'>
+				<div class='wrap'>
+					<ul>
+
+                                                <li class='a_selected' c_data=' '><i class='s cate_all'></i><span>服务</span><i class='e'></i></li>
+                                                <li t_data='tid[]=42'><i class='s cate_app'></i><span>移动互联</span><i class='e'></i></li>
+                                                <li t_data='tid[]=43'><i class='s cate_site'></i><span>电商营销</span><i class='e'></i></li>
+                                                <li t_data='tid[]=44'><i class='s cate_inspire'></i><span>品牌网站建设</span><i class='e'></i></li>
+                                                <li t_data='tid[]=36'><i class='s cate_article'></i><span>成品商城</span><i class='e'></i></li>
+                                                <li t_data='tid[]=46'><i class='s cate_creat'></i><span>网络推广</span><i class='e'></i></li>
+                                                <li t_data='tid[]=47'><i class='s sort_recom'></i><span>平面设计</span><i class='e'></i></li>
+                                                <li t_data='tid[]=47'><i class='s sort_fa'></i><span>增值服务</span><i class='e'></i></li>
+                                                
+											</ul>
+					<div class='clear'></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class='asort'>
+			<div class='hd'>
+				<div class='wrap'>
+					<div class='fl'><span>经典案例</span><div class='clear'></div></div>
+					<div class='fr'></div>
+					<div class='clear'></div>
+				</div>
+			</div>
+			<div class='ct ctff'>
+				<div class='wrap'>
+					<ul class='choose_sort'>
+												<li t_data='tid[]=4'><i></i><span>案例</span><i class='e'></i></li>
+												<li t_data='tid[]=24'><i></i><span>品牌网站建设</span><i class='e'></i></li>
+												<li t_data='tid[]=25'><i></i><span>电商营销</span><i class='e'></i></li>
+												<li t_data='tid[]=26'><i></i><span>移动互联类</span><i class='e'></i></li>
+												<li t_data='tid[]=27'><i></i><span>VI设计</span><i class='e'></i></li>
+											</ul>
+					<div class='clear'></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class='loading_dark'></div>
+	<div id='loading_mask'>
+		<div class='loading_mask'>
+			<ul class='anm'>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+
+	</div>
+	<script language='javascript' src='/dede58/html5/js/zepto.min.js'></script>
+	<script language='javascript' src='/dede58/html5/js/fx.js'></script>
+	<script language='javascript' src='/dede58/html5/js/script.js'></script>
+</body>
+</html>
+
+";
+?>

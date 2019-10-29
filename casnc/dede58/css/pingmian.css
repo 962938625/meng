@@ -1,0 +1,135 @@
+@charset "utf-8";
+h1,h2,h3,h4,h5,h6{
+	font-family:'微软雅黑';
+	font-weight:bold;
+}
+.warpyly{
+	width:1180px;
+	margin:0 auto;	
+	background:#fff;
+	font-family:'微软雅黑';
+	padding-bottom:50px;
+}
+.ydtitle{
+	color:#fff;
+	background:#ec1a23;
+	height:100px;
+	text-align:center;
+	border-bottom:5px solid #f2ebeb;
+}
+.ydtitle2{
+	margin-top:100px;
+}
+.ydtitle h1{
+	font-size:35px;
+	padding-top:15px;
+	color:#fff;
+}
+.ydtitle h2{
+	font-size:20px;
+	color:#fff;
+	font-weight:normal;
+}
+.ydyuyue{
+	height:50px;
+	background:;
+	line-height:50px;
+	margin-top:70px;
+	text-align:center;
+	color:#fff;
+	display:block;
+	font-weight:bold;
+	font-size:20px;
+	padding-right:20px;
+	background:url(../images/yidongjiantou.png)	no-repeat 630px center #ccc;
+	transition: all 0.2s linear 0s;
+}
+.ydyuyue:hover{
+	background:url(../images/yidongjiantou.png)	no-repeat 630px center #ff0000;
+}
+/**/
+
+
+.mingpianyinyu{
+	background:url(../images/mingpingyinyubg.jpg) no-repeat 630px 40px;
+	padding:40px 30px 0 30px;
+	height:344px;
+}
+.mingpianyinyu1{
+	background:url(../images/huaceyinyubg.jpg) no-repeat 580px 40px;
+	height:190px;
+}
+.mingpianyinyu h1{
+	width:530px;
+	color:#333333;
+	font-size:18px;
+	line-height:35px;
+	padding:20px 0 0 20px;
+}
+.mingpian{
+	padding:0 30px;
+}
+.mingpian h2{
+	color:#333333;
+	font-size:18px;
+	line-height:30px;
+	padding-top:40px;
+}
+.pianmingtitle{
+	background:url(../images/pingmiantitlebg.jpg) no-repeat;
+	height:50px;
+	margin-top:80px;
+}
+.pianmingtitle1{
+	background-position:0 0;
+}
+.pianmingtitle2{
+	background-position:0 -50px;
+}
+.pianmingtitle3{
+	background-position:0 -100px;
+}
+.pianmingtitle4{
+	background-position:0 -150px;
+}
+.pianmingtitle5{
+	background-position:0 -200px;
+}
+.pianmingtitle6{
+	background-position:0 -250px;
+}
+.mingpianzaiti{
+	padding-top:40px;
+}
+.mpztlist{
+	height:100px;
+}
+.mpztpic{
+	width:100px;
+	height:70px;
+	background:url(../images/mingpianzaitiyuan.jpg) no-repeat;
+	font-size:15px;
+	text-align:center;
+	line-height:20px;
+	padding-top:30px;
+	color:#fff;
+}
+.mpzttext{
+	height:50px;
+	width:970px;
+	background:#f2f2f2;
+	line-height:50px;
+	color:#666;
+	font-size:15px;
+	margin-top:25px;
+	padding-left:20px;
+	text-align:left;
+}
+.mpzttext1{
+	padding-right:20px;
+	text-align:right;
+}
+.mingpiannr{
+	padding-top:40px;
+	text-align:center;
+}

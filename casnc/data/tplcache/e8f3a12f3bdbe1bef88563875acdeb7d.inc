@@ -1,0 +1,1 @@
+<li><a href="[field:typeurl/]" class="facebook"><i class="icon-globe"></i><span>[field:typename/]</span></a></li>

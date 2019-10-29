@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* dede58.com 做最好的织梦模板 */
+h1, h2, h3, h4, h5, h6 {
+	font-family:'微软雅黑';
+	font-weight:bold;
+}
+.warpyly {
+	width:1180px;
+	margin:0 auto;
+	background:#fff;
+	font-family:'微软雅黑';
+	padding-bottom:50px;
+}
+.ydtitle {
+	color:#fff;
+	background:#ec1a23;
+	height:100px;
+	text-align:center;
+	border-bottom:5px solid #f2ebeb;
+}
+.ydtitle2 {
+	margin-top:100px;
+}
+.ydtitle h1 {
+	font-size:35px;
+	padding-top:15px;
+	color:#fff;
+}
+.ydtitle h2 {
+	font-size:20px;
+	color:#fff;
+	font-weight:normal;
+}
+.ydyuyue {
+	height:50px;
+ background:;
+	line-height:50px;
+	margin-top:70px;
+	text-align:center;
+	color:#fff;
+	display:block;
+	font-weight:bold;
+	font-size:20px;
+	padding-right:20px;
+	background:url(../images/yidongjiantou.png) no-repeat 630px center #ccc;
+	transition: all 0.2s linear 0s;
+}
+.ydyuyue:hover {
+	background:url(../images/yidongjiantou.png) no-repeat 630px center #ff0000;
+}
+/**/
+
+
+.mingpianyinyu {
+	background:url(../images/aboutyinyubg.jpg) no-repeat 640px 40px;
+	padding:40px 30px 0 30px;
+	height:228px;
+}
+.mingpianyinyu1 {
+	background:url(../images/huaceyinyubg.jpg) no-repeat 580px 40px;
+	height:190px;
+}
+.mingpianyinyu h1 {
+	width:510px;
+	color:#333333;
+	font-size:18px;
+	line-height:35px;
+	padding:20px 0 0 20px;
+}
+.mingpian {
+	padding:0 30px;
+}
+.mingpian h2 {
+	color:#333333;
+	font-size:18px;
+	line-height:30px;
+	padding-top:40px;
+}
+.aboutyoushi {
+	width:520px;
+	margin:0 30px;
+	margin-top:120px;
+	padding-top:70px;
+	padding-left:600px;
+	border-top:1px dashed #d6d6d6;
+	background:url(../images/ouryoushi.jpg) no-repeat 40px 90px;
+}
+.aboutyoushi h1, .aboutfengcai h1 {
+	font-size:18px;
+	line-height:35px;
+	color:#6bc30d;
+}
+.aboutyoushi h1 span, .aboutfengcai h1 span {
+	color:#333;
+}
+.abouthuanjing, .aboutfengcai {
+	padding:0 30px;
+}
+.abouttitle {
+	background:url(../images/abouttitle.jpg) no-repeat;
+	height:50px;
+	margin-top:80px;
+}
+.abouttitle1 {
+	background-position:0 0;
+}
+.abouttitle2 {
+	background-position:0 -50px;
+}
+.aboutfengcai h1 {
+	padding-left:40px;
+}
+.abouthuanjing h2 {
+	padding-top:40px;
+	font-size:18px;
+	line-height:35px;
+	color:#333;
+}
+.aboutpic {
+	padding-top:40px;
+	text-align:center;
+}

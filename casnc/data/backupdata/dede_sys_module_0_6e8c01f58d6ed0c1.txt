@@ -1,0 +1,7 @@
+INSERT INTO `dede_sys_module` VALUES('1','0cce60bc0238aa03804682c801584991','百度新闻','','','0','');
+INSERT INTO `dede_sys_module` VALUES('2','1f35620fb42d452fa2bdc1dee1690f92','文件管理器','','','0','');
+INSERT INTO `dede_sys_module` VALUES('3','72ffa6fabe3c236f9238a2b281bc0f93','广告管理','','','0','');
+INSERT INTO `dede_sys_module` VALUES('4','b437d85a7a7bc778c9c79b5ec36ab9aa','友情链接','','','0','');
+INSERT INTO `dede_sys_module` VALUES('5','acb8b88eb4a6d4bfc375c18534f9439e','投票模块','','','0','');
+INSERT INTO `dede_sys_module` VALUES('6','572606600345b1a4bb8c810bbae434cc','挑错管理','','','0','');
+INSERT INTO `dede_sys_module` VALUES('7','606c658db048ea7328ffe1c7ae2a732f','畅言评论模块','','','0','<m:top name=\'畅言评论\' display=\'block\'>\r\n<m:item name=\'畅言模块\' link=\'changyan_main.php\' rank=\'sys_Feedback\' target=\'main\'/>\r\n<m:item name=\'评论管理\' link=\'changyan_main.php?dopost=manage\' rank=\'sys_Feedback\' target=\'main\'/>\r\n<m:item name=\'数据统计\' link=\'changyan_main.php?dopost=stat\' rank=\'sys_Feedback\' target=\'main\'/>\r\n<m:item name=\'导入导出\' link=\'changyan_main.php?dopost=import\' rank=\'sys_Feedback\' target=\'main\'/>\r\n<m:item name=\'畅言设置\' link=\'changyan_main.php?dopost=setting\' rank=\'sys_Feedback\' target=\'main\'/>\r\n</m:top>');

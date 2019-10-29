@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="/dede58/js/html5shiv.js"></script>
+<![endif]-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" id="color-variation" href="/dede58/css/beb.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/dede58/css/case.css" />
+<style type="text/css">
+body, td, th {
+	font-family: Verdana, Geneva, sans-serif;
+}
+</style>
+<script src="/dede58/js/jquery.min.js"></script><!--JQUERY-->
+<script src="/dede58/js/includer.js"></script>
+</head>
+
+<body data-smooth-scrolling="1">
+<section id="wrapper"><!--MAIN WRAPPER STARTS -->
+		<section id="center-page">
+	<section id="container">
+	<!--[if lte IE 7]><script src="/dede58/js/lte-ie7.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/dede58/css/style.css" />
+
+{dede:include filename="head2.htm"/}
+	
+	<section class="two-third">
+	
+    <div class="news_contact">
+    　　{dede:field.content/}</div></div>
+	</section>
+    
+    
+	<section class="one-third last">
+    
+    	<div class="add_right">
+		        	<a href="{dede:type typeid='6'}[field:typeurl/]{/dede:type}"><img src="/dede58/images/211614147799.jpg" width="380"></a>
+		
+        </div>
+        <!---add_right end-->
+    
+    
+			<div class="title"><h2>服务项目</h2></div>
+            <ul class="footer-tags">
+                  {dede:channel type='son' typeid='6'}
+                  <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+                  {/dede:channel}
+			
+		</ul>
+
+	</section>
+	
+</section>
+	</section> 
+	</section>
+     
+	
+<div class="clear"></div>
+
+<div id="backtop"></div>
+<!---case--->
+
+
+
+
+{dede:include filename="footer.htm"/}
+
+
+
+	</section><!--MAIN WRAPPER ENDS -->
+</section><!--MAIN WRAPPER ENDS -->
+</section>
+
+</body>
+</html>

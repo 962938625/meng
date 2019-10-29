@@ -1,0 +1,1 @@
+<li><a href="[field:typeurl/]" class="twitter"><i class="icon-html5"></i><span>[field:typename/]</span></a></li>

@@ -1,0 +1,16 @@
+<?php
+global $em_stars;
+$em_stars = array();
+$em_stars['1'] = '°×Ñò×ù';
+$em_stars['10'] = 'Ä¦ôÉ×ù';
+$em_stars['11'] = 'Ë®Æ¿×ù';
+$em_stars['12'] = 'Ë«Óã×ù';
+$em_stars['2'] = '½ðÅ£×ù';
+$em_stars['3'] = 'Ë«×Ó×ù';
+$em_stars['4'] = '¾ÞÐ·×ù';
+$em_stars['5'] = 'Ê¨×Ó×ù';
+$em_stars['6'] = '´¦Å®×ù';
+$em_stars['7'] = 'ÌìèÒ×ù';
+$em_stars['8'] = 'ÌìÐ«×ù';
+$em_stars['9'] = 'ÉäÊÖ×ù';
+?>

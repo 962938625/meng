@@ -1,0 +1,8 @@
+<?php
+global $em_maritals;
+$em_maritals = array();
+$em_maritals['1'] = 'Î´»é';
+$em_maritals['2'] = 'ÒÑ»é';
+$em_maritals['3'] = 'ÀëÒì';
+$em_maritals['4'] = 'É¥Å¼';
+?>

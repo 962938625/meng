@@ -1,0 +1,85 @@
+<section id="header-bg" >
+    <section id="header-wrapper">
+  <div id="pre-header-panel">
+    <div class="container">
+      <div class="one-half" style="width:30%;">
+        <ul id="top-links">
+          <li><i class="icon-map-marker"><img src="/dede58/images/icon_add.jpg"></i><a href="/contact/">{dede:global.address/}</a></li>
+          <li><i class="icon-phone"><img src="/dede58/images/icon_tel.jpg"></i><strong><a href="javascript:void(0);" style="color:#EC1A23;">{dede:global.tel/}</a></strong></li>
+        </ul>
+      </div>
+      <div class="one-half last" style="width:65%;">
+        <ul class="header-social-icons">
+          {dede:type typeid='7'}<li><a href="[field:typeurl/]" class="googleplus"><i class="icon-mobile"></i><span>[field:typename/]</span></a></li>{/dede:type}
+          {dede:type typeid='8'}<li><a href="[field:typeurl/]" class="dribbble"><i class="icon-cart"></i><span>[field:typename/]</span></a></li>{/dede:type}
+          {dede:type typeid='9'}<li><a href="[field:typeurl/]" class="twitter"><i class="icon-html5"></i><span>[field:typename/]</span></a></li>{/dede:type}
+          {dede:type typeid='11'}<li><a href="[field:typeurl/]" class="facebook"><i class="icon-globe"></i><span>[field:typename/]</span></a></li>{/dede:type}
+          {dede:type typeid='12'}<li><a href="[field:typeurl/]" class="linkedin"><i class="icon-calculate"></i><span>[field:typename/]</span></a></li>{/dede:type}
+        </ul>
+      </div>
+    </div>
+  </div>
+  </section>
+  <header>
+      <section id="header-container">
+        <section class="container">
+          <div class="logo-wrapper"><a href="/" id="logo"></a></div>
+          <div id="navigation-wrapper">
+            <nav id="main-navigation">
+              <ul class="main-menu">
+                <li><a href="/"  class="{dede:field name=typeid runphp='yes'}(@me=='')? @me='active-page':@me='';{/dede:field}"><span aria-hidden="true" class="li_display nav_icon"></span>Ê×Ò³</a></li>
+                {dede:channelartlist typeid='top' currentstyle='active-page'}                
+				<li><a href="{dede:field name='typeurl'/}" class="{dede:field.currentstyle/}" ><span aria-hidden="true" class="li_{dede:field.seotitle /} nav_icon"></span>{dede:field name='typename'/}</a>
+					<ul>
+						{dede:channel type='son' noself='yes'}
+                			<li><a href="[field:typelink/]" target="_self">[field:typename/]</a></li>
+                		{/dede:channel}
+					</ul>
+				</li>                                
+                {/dede:channelartlist}                
+              
+              </ul>
+            </nav>
+          </div>
+        </section>
+    </section>
+  </header>
+</section >
+
+<div class="clear"></div>
+
+<section class="page-top">
+    <div class="container">
+    <div class="three-fourth">
+      <h1>{dede:field.typename/}</h1>
+      <ul class="breadcrumb">
+        {dede:field name='position'/}  </ul>
+    </div>
+    <div class="one-fourth last">
+					
+					<div id="search-text" class="search-text">
+                    <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+                    <input type="hidden" name="kwtype" value="0" />
+						<input type="text" class="sousuo"  placeholder="ËÑË÷" name="q" />
+						<input type="submit" name="submit" class="tijiao" />
+					</form>
+						</div>					
+
+					</div>
+    </div>
+</section>
+
+<!-------------->
+<section id="content">	
+	<section class="container mb50">
+		
+	<div class="filter-portfolio">
+        <ul id="filterable">
+        {dede:channel type='son' currentstyle="
+         <li><a class='tooltip active' data-categories='animation' href='~typelink~'>~typename~</a></li>
+      "}      
+         <li><a class="tooltip" data-categories="animation" href="[field:typeurl/]">[field:typename/]</a></li>
+      {/dede:channel}
+               
+           </ul>
+      </div>
