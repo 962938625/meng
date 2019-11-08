@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+	    window.onload = window.onresize = function(){		 
+	        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+			//找到标签名为html的第一个
+	        var _html = document.getElementsByTagName('html')[0];
+			//如果屏幕宽度大于640 
+			//就用 640/16=40
+			//小于640的时候 不确定 也是尺寸/40
+	        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+			//最大网页尺寸640 
+			//最大字体（根字体大小） 40
+	    }
+</script>
+</head>
+<body>
+    <header class="gWidth">
+        <div class="top clearfix">
+            <span class="iconfont icon-zuojiantou fl"></span>
+            <h6 class="fl">Woman, Dresses</h6>
+            <span class="iconfont icon-ic_gouwuchecopy fr s2"></span>
+        </div>
+        <div class="bottom clearfix">
+            <button class="fl">add to wishlist</button>
+            <button class="fl">add to cart</button>
+        </div>
+    </header>
+    <main>
+        <div class="banner gShadow">
+            <img src="img/img.jpg" alt="banner">
+        </div>
+        <div class="text1 gShadow">
+            <h6 class="fl">Elegant Pink Dresses</h6>
+            <input type="button" value="$605,00" class="fr">
+        </div>
+        <div class="text2 gShadow">
+
+                <span class="iconfont icon-jiahao fl pl24"></span>
+                <p class="fl ">Description</p>
+         </div>
+         <div class="cs gShadow">
+             <div class="top clearfix">
+                 <h6>Colour:</h6>
+                 <p>Choose a colour for item</p>
+                 <div class="fk1">
+                     <img src="img/duihao.png" alt="">
+                 </div>
+                 <div class="fk2"></div>
+                 <div class="fk3"></div>
+            </div>
+                 <div class="line"></div>
+             <div class="bottom">
+                 <h6>Size:</h6>
+                 <p>Size available for this item</p>
+                 <div class="liu">6</div>
+                 <div class="ba">8</div>
+                 <div class="shi">10</div>
+                 <div class="shier">12</div>
+                 <div class="shisi">14</div>
+             </div>
+         </div>
+         <div class="btn">
+             <button>Add to Cart</button>
+         </div>
+         <div class="share">
+             <span class="s">SHARE ON</span>
+             <div class="line fr"></div>
+             <div class="tubiao">
+                 <div class="t fl"><p>205</p></div>
+                 <div class="f fl"><p>332</p></div>
+                 <div class="p fl"><p>112</p></div>
+             </div>
+         </div>
+    </main>
+</body>
+</html>

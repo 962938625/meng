@@ -1,0 +1,255 @@
+body{
+    background-color: #E8E8E8;
+}
+header{
+    background-color: #38474F;
+    padding: .6rem .6rem .35rem .6rem;
+    position: fixed;
+    top: 0;left: 0;
+}
+.top{
+    height: 2.35rem;
+    line-height: 2.35rem;
+}
+.top .s2{
+	position: relative;
+}
+.top .s2:after{
+	content: '3';
+	width: .7rem;
+	height: .45rem;
+	background-color: #fff;
+	border-radius: 8px;
+	position: absolute;
+	right:-0.525rem; top:.205rem;
+	font-size: 12px;
+	line-height: .45rem;
+	text-align: center;
+}
+
+.top h6{
+    color: #fff;
+    margin-left: 1.15rem;
+}
+.top span{
+    font-size: 1.15rem;
+}
+.top .icon-ic_gouwuchecopy{
+    margin-right: .5rem;
+}
+.bottom button{
+    color: #fff;
+}
+button:nth-child(1){
+    width: 7.175rem;
+    height: 1.575rem;
+    line-height: 1.575rem;
+    background-color: #2D3A40;
+    margin-right: .45rem;
+    border-radius: 3px;
+}
+button:nth-child(2){
+    width: 7.175rem;
+    height: 1.575rem;
+    line-height: 1.575rem;
+    background-color: #F6846A;
+    border-radius: 3px;
+}
+main{
+    padding: 0 .6rem;
+    margin-top: 5.475rem;
+}
+.banner img{
+	width: 14.8rem;
+}
+main .banner img{
+    width: 14.8rem;
+}
+main .text1{
+    background-color: #fff;
+    height: 3rem;
+    line-height: 3rem;
+}
+main .text1{
+    padding: .7rem .625rem .65rem 1.1rem;
+}
+main .text1 input{
+	width: 3.6rem;
+	height: 1.675rem;
+	background-color: #BFBFC4;
+	border-radius: 2px;
+    color: #fff;
+    margin-top: .75rem;
+}
+main .text2{
+	height: 2.475rem;
+	line-height: 2.475rem;
+	margin-top: .75rem;
+}
+.cs{
+    height: 12.875rem;
+    width: 14.925rem;
+    background-color: #fff;
+    margin-top: .85rem;
+    border-radius: .175rem;
+}
+.cs .top h6{
+    color: #000;
+    padding-left: 1.525rem;
+    background: url('../img/shuidi.png') no-repeat left center;
+    margin-left: 4.9rem;
+    margin-top: .875rem;
+    margin-bottom: -.5rem;
+}
+.cs .top p{
+    color: #A5A5AD;
+    font-weight: bold;
+    font-size: .75rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.cs .top div{
+    height: 1.775rem;
+    width: 1.775rem;
+    float: left;
+    margin-right: .675rem;
+    border-radius: 2px;
+    bb
+}
+.cs .top .fk1{
+    background-color: #EFC9CD;
+    margin-left: 4.175rem;
+}
+.cs .top .fk1 img{
+    margin-left: .25rem;
+    margin-top: .25rem;
+}
+.cs .top .fk2{
+    background-color: #AF6779;
+}
+.cs .top .fk3{
+    background-color: #87A5B1;
+}
+.cs .bottom h6{
+    color: #000;
+    padding-left: 1.725rem;
+    background: url('../img/yijia.png') no-repeat left center;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    margin-bottom: -.5rem;
+}
+.cs .bottom p{
+    color: #A5A5AD;
+    font-weight: bold;
+    font-size: .75rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: .75rem;
+}
+.cs .bottom div{
+    height: 1.775rem;
+    width: 1.775rem;
+    background-color: #D9D9DD;
+    border-radius: 2px;
+    float: left;
+    margin-right: .625rem;
+    font-size: .75rem;
+    text-align: center;
+    line-height: 1.775rem;
+    margin-top: .9rem;
+}
+.cs .bottom .liu{
+    margin-left: 1.775rem;
+}
+.cs .bottom .ba{
+    background-color: #67AFD5;
+    color: #fff;
+}
+.btn button{
+    background-color: #394143;
+    width: 6.925rem;
+    height: 1.5rem;
+    border-radius: 4px;
+    margin: 1.6rem 3.8rem;
+    color: #fff;
+}
+.share .s{
+    margin-left: .675rem;
+    margin-right: .9rem;
+    font-size: .55rem;
+    font-weight: bold;
+}
+.share .line{
+    width: 10.75rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #000;
+    margin-top: -0.5rem;
+}
+.share .tubiao{
+    margin-top: 1rem;
+}
+.share .tubiao .t{
+    width: 3.75rem;
+    height: 3.75rem;
+    background: url(../img/t.png) no-repeat;
+    background-size: 2rem;
+    position: relative;
+    margin-right: 1.15rem;
+}
+.share .tubiao .t p{
+    width: 2.8rem;
+    height: 2rem;
+    background: url(../img/kaung.png) no-repeat;
+    background-size: 2rem;
+    position: absolute;
+    top: .75rem;
+    left: 2.5rem;
+    padding-left: .45rem;
+    padding-top: .15rem;
+    font-size: .75rem;
+
+}
+.share .tubiao .f{
+    width: 3.75rem;
+    height: 3.75rem;
+    background: url(../img/f.png) no-repeat;
+    background-size: 2rem;
+    position: relative;
+    margin-right: 1.15rem;
+}
+.share .tubiao .f p{
+    width: 2.8rem;
+    height: 2rem;
+    background: url(../img/kaung.png) no-repeat;
+    background-size: 2rem;
+    position: absolute;
+    top: .75rem;
+    left: 2.5rem;
+    padding-left: .45rem;
+    padding-top: .15rem;
+    font-size: .75rem;
+
+}
+.share .tubiao .p{
+    width: 3.75rem;
+    height: 3.75rem;
+    background: url(../img/p.png) no-repeat;
+    background-size: 2rem;
+    position: relative;
+    margin-right: 1.15rem;
+}
+.share .tubiao .p p{
+    width: 2.8rem;
+    height: 2rem;
+    background: url(../img/kaung.png) no-repeat;
+    background-size: 2rem;
+    position: absolute;
+    top: .75rem;
+    left: 2.5rem;
+    padding-left: .45rem;
+    padding-top: .15rem;
+    font-size: .75rem;
+
+}

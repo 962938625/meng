@@ -1,0 +1,35 @@
+@charset "utf-8";
+body,ul,ol,li,dl,dd,h1,h2,h3,h4,h5,h6,p,input,textarea,select,figure{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+input,textarea,select,button{border: none; background-color: transparent; outline: none;}
+textarea{resize: none;}
+img{border: none;vertical-align: top;}
+a{text-decoration: none;}
+a {-webkit-tap-highlight-color:transparent;}
+html {-webkit-text-size-adjust: none;}
+a{outline:0}
+em{ font-style: normal;}
+.fl{float: left;} .fr{float: right;}
+.clearfix:after,.clearfix:before{content: ""; display: table;}
+.clearfix:after{clear: both;}
+.clearfix{*zoom:1;}
+
+.gWidth{
+	width: 16rem;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gShadow{
+	border-radius: 6px;
+	box-shadow: 0 3px 2px rgba(0,0,0,.3);
+	background-color: #fff;
+}
+.pl24{
+	padding-left: .6rem;
+}
+
+
+
+
