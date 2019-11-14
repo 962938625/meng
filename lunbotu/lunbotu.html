@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 590px;
+            height: 470px;
+            position: relative;
+            border: 10px solid orange;
+            overflow: hidden;
+            margin: 100px auto;
+        }
+        .imgs{
+            position: absolute;
+            display: flex;
+        }
+        .imgs img{
+            display: block;
+        }
+        .arrows span{
+            position: absolute;
+            top: 215px;
+            font-family: serif;
+            font-size: 36px;
+            color: #fff;
+            background: #000;
+            text-align: center;
+            width: 30px;
+            height: 40px;
+            line-height: 40px;
+            cursor: pointer;
+            opacity: 0;
+        }
+        .box:hover .arrows span{
+            opacity: .5;
+        }
+        .box .arrows span:hover{
+            opacity: 1;
+        }
+        .arrows .left{
+            left: 0;
+        }
+        .arrows .right{
+            right: 0;
+        }
+        .dots{
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .dots li{
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 24px;
+            text-align: center;
+            background: orange;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            margin: 0 2px;
+            cursor: pointer;
+        }
+        .dots .act{
+            background: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="carousel01" class="box">
+        <ul class="imgs" style="left:0">
+            <li><a href="#"><img src="images/lb1.jpg" alt="1" width="590px" height="470px"></a></li>
+            <li><a href="#"><img src="images/lb2.jpg" alt="2" width="590px" height="470px"></a></li>
+            <li><a href="#"><img src="images/lb3.jpg" alt="3" width="590px" height="470px"></a></li>
+            <li><a href="#"><img src="images/lb4.jpg" alt="4" width="590px" height="470px"></a></li>
+            <li><a href="#"><img src="images/lb5.jpg" alt="5" width="590px" height="470px"></a></li>
+        </ul>
+        <div class="arrows">
+            <span class="left">&lt;</span>
+            <span class="right">&gt;</span>
+        </div>
+        <ul class="dots">
+            <li class="act">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    <script>
+        //编写思路，指定index值，根据index值显示对应的图片和按钮
+        //轮播图的主要工作就是调整图片列表的定位或是显隐
+        var box=document.getElementById('carousel01');//轮播图展示区域
+        var imgs=box.getElementsByClassName('imgs')[0];
+        var arrowL=box.getElementsByClassName('left')[0];
+        var arrowR=box.getElementsByClassName('right')[0];
+        var dots=box.getElementsByClassName('dots')[0];
+        var btns=dots.getElementsByTagName('li');
+        var imgWidth=590;//一图宽度
+        var index=0;//当前显示的图片的序号。0号开始
+        var n=btns.length;//图片数量化
+        var t=null;
+        // imgs.style.left=-1*4*imgWidth+'px';
+        //当前显示的图片序号，0号开始，范围是[0，n-1]
+        //显示指定index对应的图片
+        function showImg(index){
+            imgs.style.left=-1*index*imgWidth+'px';
+        }
+        //指定index的按钮显示特殊样式
+        function showBtn(index){
+            for(var i=0;i<btns.length;i++){
+              btns[i]. removeAttribute('class'); 
+            }
+            btns[index].className='act';
+        }
+        arrowR.onclick=function(){
+            // if(index<n-1){
+            //     index++;
+            // }else{
+            //     index=0;
+            // }
+            index=(index<n-1)?index+1:0;//序号边界判断
+            showImg(index);
+            showBtn(index);
+        }
+        arrowL.onclick=function(){
+            index=index>0?index-1:n-1;
+            showImg(index);
+            showBtn(index);
+        }
+        for(var i=0;i<n;i++){
+                btns[i].index=i;
+                btns[i].onclick=function(){
+                index=this.index;
+                showBtn(index);
+                showImg(index);
+            }
+        }
+        box.onmouseover=function(){
+            clearInterval(t);
+        }
+        box.onmouseout=function(){
+             t=setInterval('arrowR.onclick()',1000);
+        }
+        box.onmouseout();
+    </script>
+</body>
+</html>
